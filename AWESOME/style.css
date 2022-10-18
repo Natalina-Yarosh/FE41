@@ -1,0 +1,40 @@
+.awesome__line {
+    width: 170px;
+margin: 0 auto;
+
+border-top: 1px solid #EC7979;
+}
+.awesome__title {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.awesome__subtitle {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #86878B;
+}
+.awesome__wrap {
+    border: 1px solid red;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    text-align: center;
+}
+.awesome__img {
+    padding-top: 10px;
+}
+.awesome__item {
+    display: inline-block;
+}
+.awesome__text {
+    text-align: center;
+    width: calc(84px + 371px)
+}
+.awesome__block {
+    text-align: center;
+    margin-top: 216px;
+}
+.awesome__wrap {
+    text-align: center;
+    display: inline-block;
+}
