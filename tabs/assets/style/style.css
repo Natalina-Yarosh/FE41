@@ -89,6 +89,7 @@ font-size: 14px;
 }
 
 .tabs__item_active{
+    border-radius: 8px 8px 0 0 ;
     border-top: 1px solid #C6CBCD;
 border-left: 1px solid #C6CBCD;
 border-right: 1px solid #C6CBCD;
