@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+margin: 0 15px;
+}
+.header__h2{
+    font-family:'Raleway';
+    margin-top: 70px;
+    display: block;
+    text-align: center;
+}
+.header__line{
+    width: 170px;
+    height: 1px;
+    border:1px solid #EC7979;
+    margin: 40px auto;
+}
+.header__txt{
+    font-family: 'Raleway';
+    text-align: center;
+    color: #86878B;
+}
+.benefits{
+    margin: 105px 170px;
+}
+.benefits__point{
+    text-align: center;
+    max-width: 371px;
+}
+.benefits__h4{
+   font-family: 'Open Sans';
+   margin-bottom: 26px;
+   text-align: center;
+}
+.benefits__txt{
+   display: flex;
+   justify-content: space-around;
+}
+.benefits__imgs{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content:space-around ;
+}
+.benefits__description{
+    height: 84px;
+    text-align: center;
+}
