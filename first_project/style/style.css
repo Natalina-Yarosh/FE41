@@ -4,8 +4,57 @@
    box-sizing: border-box;
 }
 
+.tabs {
+   margin-top: 110px;
+   margin-bottom: 118px;
+
+}
+
+.container__tabs {
+   max-width: 1170px;
+   padding: 0 15px;
+   margin: 0 auto;
+   border: 1px solid #C6CBCD;
+}
+
+.tab__content {
+   max-width: 570px;
+   margin: 55px 29px 54px 100px;
+}
+
+.tab__content-header {
+   font-size: 30px;
+   font-family: 'Open Sans';
+   text-align: center;
+   margin-bottom: 57px;
+}
+
+.tab__content-text1 {
+   text-align: left;
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   margin-bottom: 26px
+}
+
+.tab__content-text2 {
+   text-align: left;
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   margin-bottom: 84px;
+}
+
+.content__item-button {
+   border: none;
+   width: 270px;
+   height: 58px;
+   background-color: #EC7979;
+   font-family: 'Open Sans';
+   font-size: 18px;
+   text-align: center;
+   color: #FFFFFF;
+}
+
 .about {
-   margin-top: 118px;
    margin-bottom: 110px;
 }
 
