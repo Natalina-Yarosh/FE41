@@ -92,11 +92,12 @@
     display: flex;
     cursor: pointer;
     width: auto;
+    margin-bottom: 110px;
 }
 
-.awesome__divider {
+.divider {
     margin: auto;
-    width: 150px;
+    width: 170px;
     border-bottom: 1px solid #EC7979;
 }
 
@@ -212,6 +213,94 @@
 
 .tabs__item_inactive {
     border-bottom: 1px solid #C6CBCD;
-    ;
 
+}
+
+.pricing {
+    background-color: #F5F5F5;
+    padding: 82px 169px 83px;
+}
+
+.pricing__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.pricing__subtitle {
+    margin-top: 40px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 59px;
+}
+
+.pricing__cards {
+    display: flex;
+    column-gap: 30px;
+    height:530px ;
+}
+
+.pricing__card {
+    width: calc((100% - 60px)/3);
+    border: 1px solid #F5F5F5;
+}
+.pricing__card_reqular{
+    align-self:flex-end;
+}
+.card {
+    height: 50px;
+    background-color: white;
+    border: 1px solid #F5F5F5;
+    padding:15px 0 14px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color:  #86878B;
+}
+
+.card_name{
+    background-color: #333333;
+    height: 60px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: capitalize;  
+    color: white;
+    border: 1px solid white;
+}
+
+.card_price{
+    background-color:  #333333;
+    height: 100px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center; 
+    color: white;
+    border: 1px solid white;
+    padding:25px 0 24px;
+}
+
+.card_time{
+    background-color: #333333;
 }
