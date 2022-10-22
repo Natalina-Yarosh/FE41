@@ -225,7 +225,10 @@
     background-color: #F5F5F5;
     padding: 82px 169px 83px;
 }
-
+.pricing__container{
+   max-width: 1170px;
+    margin: 0 auto;
+}
 .pricing__title {
     font-family: 'Raleway';
     font-style: normal;
