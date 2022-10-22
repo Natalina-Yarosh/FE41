@@ -63,13 +63,17 @@
     align-items: center;
     text-align: center;
 }
-
+.awesome__bottom_item{
+    width: calc((100% - 54px)/3);
+}
 .awesome__bottom-imageContainer {
     padding-left: 35%;
     margin-bottom: 30px;
+
 }
 
 .awesome__imageContainer {
+  
     width: 91.86px;
     height: 91.61px;
     padding: 9px;
@@ -93,6 +97,7 @@
     cursor: pointer;
     width: auto;
     margin-bottom: 110px;
+    column-gap: 27px;
 }
 
 .divider {
