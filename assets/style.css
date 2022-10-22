@@ -3,9 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+.wta{
     width: 1170px;
-margin: 0 15px;
+margin: 0 auto;
+padding: 0 15px;
+}
+.tabs{
+    width: 1170px;
+margin: 118px auto;
+padding: 0 15px;
 }
 .header__h2{
     font-family:'Raleway';
@@ -48,4 +54,57 @@ margin: 0 15px;
 .benefits__description{
     height: 84px;
     text-align: center;
+}
+.tabs__header{
+    display: flex;
+}
+.tabs__header_item-open{
+border:1px solid #C6CBCD;
+font-family: 'Open Sans';
+width: 201px;
+height: 39px;
+text-align: center;
+border-top-left-radius: 10%;
+border-top-right-radius: 10%;
+}
+.tabs__header_item{
+    font-family: 'Open Sans';
+    width: 201px;
+    height: 39px;
+    text-align: center;
+}
+.tabs__mainpage{
+    display: flex;
+    border: #C6CBCD 1px solid;
+}
+.tabs__leftPart{
+    margin-left:101px;
+    display: flex;
+    flex-direction: column;
+}
+.tabs__leftPart_header{
+font-family: 'Open Sans';
+margin-top: 55px ;
+margin-bottom: 57px;
+font-size: xx-large;
+}
+.tabs__leftPart_p{
+    width: 570px;
+    font-family: 'Raleway';
+}
+.tabs__leftPart_p1{
+    margin-bottom:26px;
+    display: inline-block;
+}
+.tabs__leftPart_p2{
+    margin-bottom: 84px;
+}
+.tabs__leftPart_button{
+    width:270px ;
+    height: 58px;
+    background-color: #EC7979;
+    color:white ;
+    font-family: 'Open Sans';
+    border: none;
+    font-size: large;
 }
