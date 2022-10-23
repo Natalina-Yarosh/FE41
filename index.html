@@ -1,65 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="./assets/style.css">
-   <title>Homework2</title>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="tabs">
-<div class="tabs__header">
-    <p class="tabs__header_item-open">TAB 1</p>
-    <p class="tabs__header_item">TAB 2</p>
-    <p class="tabs__header_item">TAB 3</p>
-</div>
-<div class="tabs__mainpage">
-    <div class="tabs__leftPart">
-<h2 class="tabs__leftPart_header">Tabs with soft transitioning effect.</h2>
-<p class="tabs__leftPart_p tabs__leftPart_p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-<p class="tabs__leftPart_p tabs__leftPart_p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod  bibendum laoreet.</p>
-<input type="button" value="Download" class="tabs__leftPart_button">
-    </div>
-    <div class="tabs__rightPart">
-<img src="./assets/img/Tabs/Rectangle 111.png" alt="liberty" class="tabs__rightPart_img">
-    </div>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Homework2</title>
+  </head>
+  <body>
+    <div class="tabs">
+      <div class="container">
+        <div class="tabs__header">
+          <button class="tabs__item tabs__item-open">TAB 1</button>
+          <button class="tabs__item">TAB 2</button>
+          <button class="tabs__item">TAB 3</button>
         </div>
+        <div class="tab__content">
+          <div class="tab__info">
+            <h2 class="tab__info-header">
+              Tabs with soft transitioning effect.
+            </h2>
+            <p class="tab__info-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              Cum sociis natoque penatibus et magnis dis parturient montes.
+            </p>
+            <p class="tab__info-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
+            <button class="tab__info-button">Download</button>
+          </div>
+          <div class="tab__wrap-image">
+            <img
+              src="./assets/img/Tabs/Rectangle 111.png"
+              alt="liberty"
+              class="tab__img"
+            />
+          </div>
         </div>
-    <div class="wrapper">
-    <div class="wta">
-    <div class="header">
-    <h2 class="header__h2">WHY THIS IS AWESOME</h2>
-    <div class="header__line"></div>
-    <p class="header__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
     </div>
+
     <div class="benefits">
-        <div class="benefits__imgs">
-            <img src="./assets/img/WTA/ellipse_6.png" alt="img" class="benefits__img">
-            <img src="./assets/img/WTA/about_icon_3.png" alt="img" class="benefits__img">
-            <img src="./assets/img/WTA/about_icon_2.png" alt="img" class="benefits__img">
+      <div class="container">
+        <div class="benefits__header">
+          <h2 class="benefits__title">WHY THIS IS AWESOME</h2>
+          <div class="benefits__line"></div>
+          <p class="benefits__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
         </div>
-        <div class="benefits__txt">
-        <div class="benefits_point">
-        <h4 class="benefits__h4">Thoughtful Design</h4>
-        <p class="benefits__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+        <div class="benefits__content">
+          <div class="benefit">
+            <div class="benefit__wrap-img">
+              <img
+                src="./assets/img/WTA/ellipse_6.png"
+                alt="img"
+                class="benefit__img"
+              />
+            </div>
+            <h3 class="benefit__title">Thoughtful Design</h3>
+            <p class="benefit__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+          <div class="benefit">
+            <div class="benefit__wrap-img">
+              <img
+                src="./assets/img/WTA/about_icon_3.png"
+                alt="img"
+                class="benefit__img"
+              />
+            </div>
+            <h3 class="benefit__title">Thoughtful Design</h3>
+            <p class="benefit__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+          <div class="benefit">
+            <div class="benefit__wrap-img">
+              <img
+                src="./assets/img/WTA/about_icon_2.png"
+                alt="img"
+                class="benefit__img"
+              />
+            </div>
+            <h3 class="benefit__title">Thoughtful Design</h3>
+            <p class="benefit__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
         </div>
-        <div class="benefits_point">
-            <h4 class="benefits__h4">Thoughtful Design</h4>
-            <p class="benefits__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
-        </div>
-        <div class="benefits_point">
-            <h4 class="benefits__h4">Thoughtful Design</h4>
-            <p class="benefits__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
-        </div>
-        </div>
+      </div>
     </div>
-    </div>
-    </div>
-</body>
+  </body>
 </html>
