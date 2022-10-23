@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*   Блок Tabs   */
+.tabs {
+  font-family: "Open Sans";
+  margin: 0 auto 118px;
+}
+.tabs-n {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  max-width: 184px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-bottom: none;
+}
+.tabs-n__active {
+  border-color: #c6cbcd;
+  border-radius: 5px 5px 0 0;
+}
+.tab {
+  border: 1px solid #c6cbcd;
+}
+.tab__info {
+  display: inline-block;
+  width: 58%;
+  padding: 55px 29px 54px 100px;
+  vertical-align: top;
+}
+.tab__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  margin-bottom: 40px;
+}
+.tab__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 26px;
+}
+.tab__text:last-of-type {
+  margin-bottom: 84px;
+}
+.tab__btn {
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #ec7979;
+  font-size: 18px;
+  line-height: 58px;
+
+  padding: 0px 93px;
+  max-width: 270px;
+  width: 100%;
+  border: none;
+}
+.tab__wrap {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
+.tabs__foto {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/*   Блок Awesom   */
+.designs {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-bottom: 110px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.designs__title {
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 42px;
+  margin-bottom: 40px;
+}
+.line {
+  border: 1px solid #ec7979;
+  margin: 0px auto 40px;
+  width: 170px;
+}
+.designs__text {
+  color: #86878b;
+  font-size: 18px;
+  line-height: 21.13px;
+  margin-bottom: 92px;
+}
+.ellips {
+  width: 92px;
+  height: 92px;
+  border: 1px solid #ec7979;
+  border-radius: 50%;
+  margin: 0px auto 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disign__name {
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 26px;
+  font-size: 24px;
+  line-height: 33px;
+}
+.design {
+  display: inline-block;
+  width: calc((100% - 28px - 27px - 8px) / 3);
+  margin-right: 27px;
+}
+.design:last-child {
+  margin-right: 0;
+}
+.design__text {
+  color: black;
+  font-size: 18px;
+  line-height: 21px;
+}
