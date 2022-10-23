@@ -223,7 +223,7 @@
   background-color: #333333;
   color: #ffffff;
 }
-.option__item-black1 {
+.option__item-title {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -231,7 +231,7 @@
   text-align: center;
   text-transform: capitalize;
 }
-.option__item-black2 {
+.option__item-price {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -239,9 +239,9 @@
   line-height: 42px;
   text-align: center;
 }
-.option__item-black3 {
+.option__item-description {
   color: #86878b;
 }
-.option__list2 {
+.option__list-up {
   margin-top: -10px;
 }
