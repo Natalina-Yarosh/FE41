@@ -1,69 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
     <title>axit</title>
-</head>
-<body>
-    <div>
-        <div>
-            <div class="wrapper">
-                <div class="wrapper__tabs">
-                    <div class="wrapper__tab tab-active"><a>tab1</a></div>
-                    <div class="wrapper__tab"><a>tab2</a></div>
-                    <div class="wrapper__tab"><a>tab3</a></div>
-                </div>
-                <div class="wrapper__content">
-                    <div class="content__block">
-                        <h3 class="content__title">Tabs with soft transitioning effect.</h3>
-                        <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque  penatibus et magnis dis parturient montes.</p>
-                        <p class="content__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod  bibendum laoreet.</p>
-                        <button class="content__button">Download</button>
-                    </div>
-                    <div class="content__image"><img src="image/statue.png" alt="The Statue of Liberty"></div>
-                </div>
-            </div>
+  </head>
+  <body>
+    <div class="tabs">
+      <div class="container">
+        <div class="tabs__wrap">
+          <a class="tabs__item tabs__item_active"> tab1</a>
+          <a class="tabs__item">tab2</a>
+          <a class="tabs__item">tab3</a>
         </div>
-        <div class="container">
-            <h2 class="container__title"> why this is awesome </h2>
-            <div class="container__line"></div>
-            <p class="container__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            <div class="container__content">
-                <div class="content__block">
-                    <div>
-                        <img src="image/lightbulb.png" alt="lightbulb" class="content__block-icon">
-                    </div>
-                    <h3 class="content__block-title"> Thoughtful Design </h3>
-                    <p class="content__block-text"> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt reprehenderit eos officia beatae nulla aut nostrum consectetur illo sint temporibus, inventore minima ipsum. Necessitatibus voluptates expedita laboriosam quaerat similique!
-                    </p>
-                </div>
-                <div class="content__block">
-                    <div>
-                        <img src="image/keyboard.png" alt="keyboard" class="content__block-icon">
-                    </div>
-                    <h3 class="content__block-title"> Thoughtful Design </h3>
-                    <p class="content__block-text"> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt reprehenderit eos officia beatae nulla aut nostrum consectetur illo sint temporibus, inventore minima ipsum. Necessitatibus voluptates expedita laboriosam quaerat similique!
-                    </p>
-                </div>
-                <div class="content__block">
-                    <div>
-                        <img src="image/lightning.png" alt="lightning" class="content__block-icon">
-                    </div>
-                    <h3 class="content__block-title"> Thoughtful Design </h3>
-                    <p class="content__block-text"> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt reprehenderit eos officia beatae nulla aut nostrum consectetur illo sint temporibus, inventore minima ipsum. Necessitatibus voluptates expedita laboriosam quaerat similique!
-                    </p>
-                </div>
-            </div>
-        </div>  
+        <div class="tab">
+          <div class="tab__block">
+            <h2 class="tab__title">Tabs with soft transitioning effect.</h2>
+            <p class="tab__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              Cum sociis natoque penatibus et magnis dis parturient montes.
+            </p>
+            <p class="tab__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
+            <button class="tab__button">Download</button>
+          </div>
+          <div class="tab__wrap-img">
+            <img
+              class="tab__img"
+              src="image/statue.png"
+              alt="The Statue of Liberty"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <div class="designs">
+      <div class="container">
+        <h2 class="designs__title">why this is awesome</h2>
+        <div class="designs__line"></div>
+        <p class="designs__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <div class="designs__content">
+          <div class="design">
+            <div class="design__wrap-img">
+              <img
+                src="image/lightbulb.png"
+                alt="lightbulb"
+                class="design__img"
+              />
+            </div>
+            <h3 class="design__title">Thoughtful Design</h3>
+            <p class="design__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate sunt reprehenderit eos officia beatae nulla aut nostrum
+              consectetur illo sint temporibus, inventore minima ipsum.
+              Necessitatibus voluptates expedita laboriosam quaerat similique!
+            </p>
+          </div>
+          <div class="design">
+            <div class="design__wrap-img">
+              <img
+                src="image/keyboard.png"
+                alt="keyboard"
+                class="design__img"
+              />
+            </div>
+            <h3 class="design__title">Thoughtful Design</h3>
+            <p class="design__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate sunt reprehenderit eos officia beatae nulla aut nostrum
+              consectetur illo sint temporibus, inventore minima ipsum.
+              Necessitatibus voluptates expedita laboriosam quaerat similique!
+            </p>
+          </div>
+          <div class="design">
+            <div class="design__wrap-img">
+              <img
+                src="image/lightning.png"
+                alt="lightning"
+                class="design__img"
+              />
+            </div>
+            <h3 class="design__title">Thoughtful Design</h3>
+            <p class="design__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate sunt reprehenderit eos officia beatae nulla aut nostrum
+              consectetur illo sint temporibus, inventore minima ipsum.
+              Necessitatibus voluptates expedita laboriosam quaerat similique!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
