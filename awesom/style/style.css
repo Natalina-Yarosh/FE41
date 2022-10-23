@@ -36,9 +36,9 @@
   border: 1px solid #ec7979;
   border-radius: 50%;
   margin: 0px auto 30px;
-}
-.designs__img {
-  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .disign__name {
   font-family: "Open Sans", sans-serif;
@@ -49,7 +49,11 @@
 }
 .design {
   display: inline-block;
-  width: 33%;
+  width: calc((100% - 28px - 27px - 8px) / 3);
+  margin-right: 27px;
+}
+.design:last-child {
+  margin-right: 0;
 }
 .design__text {
   color: black;

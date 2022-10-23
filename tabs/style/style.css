@@ -30,41 +30,44 @@
   border-color: #c6cbcd;
   border-radius: 5px 5px 0 0;
 }
-.box {
+.tab {
   border: 1px solid #c6cbcd;
 }
-.box__info {
+.tab__info {
   display: inline-block;
   width: 58%;
   padding: 55px 29px 54px 100px;
   vertical-align: top;
 }
-.box__title {
+.tab__title {
   font-weight: 700;
   font-size: 30px;
   line-height: 41px;
   margin-bottom: 40px;
 }
-.box__text {
+.tab__text {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   margin-bottom: 26px;
 }
-.box__btn {
+.tab__text:last-of-type {
+  margin-bottom: 84px;
+}
+.tab__btn {
   font-weight: 600;
   color: #ffffff;
   background-color: #ec7979;
   font-size: 18px;
   line-height: 58px;
-  margin-top: 84px;
+
   padding: 0px 93px;
   max-width: 270px;
   width: 100%;
   border: none;
 }
-.box__wrap {
+.tab__wrap {
   display: inline-block;
   width: 40%;
   vertical-align: top;
