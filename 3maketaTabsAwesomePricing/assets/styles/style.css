@@ -13,7 +13,7 @@
 }
 .tabs__link{
     display: inline-block;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans',sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 14px;
@@ -42,7 +42,7 @@
 }
 .tab__title{
     margin-bottom: 57px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 41px;
@@ -53,7 +53,7 @@
 }
 .tab__text{
     margin-bottom: 26px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -65,7 +65,7 @@
 }
 .tab__btn{
     margin-top: 84px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
@@ -97,7 +97,7 @@
     margin: 0 auto;
 }
 .awesome__title{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 41px;
@@ -115,7 +115,7 @@
     margin: 0 auto 40px;
 }
 .awesome__description{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -126,7 +126,6 @@
     margin-bottom: 92px;
 }
 .awesome__mainblock{
-    margin-bottom: 110px;
     width: 100%;
 }
 .awesome__items{
@@ -144,15 +143,12 @@
     width: 92px;
     height: 92px;
     margin: 0 auto 24px;
-}
-.awesome__img-item{
-    width: 65.19px;
-    height: 65.01px;
-    margin: 13.3px 13.33px;
-    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .awesome__subtitle-item{
-    font-family: 'Open Sans'; 
+    font-family: 'Open Sans', sans-serif; 
     font-size: 24px;
     font-weight: 700;
     line-height: 33px;
@@ -162,7 +158,7 @@
     max-width: 370px;
 }
 .awesome__text-item{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -173,7 +169,10 @@
 /* Start of the Pricing page */
 .pricing{
     margin-bottom: 107px;
+    padding-top: 82px;
+    padding-bottom: 83px;
     background: #F5F5F5;
+
 }
 .container{
     max-width: 1200px;
@@ -186,11 +185,10 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto 40px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
-    padding-top: 82px;
 }
 .pricing__separator{
     border-bottom: 1px solid #EC7979;
@@ -203,7 +201,7 @@
     max-width: 1169px;
     text-align: center;
     margin: 0 auto 79px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -215,19 +213,17 @@
     flex-wrap: wrap;
 }
 .pricing__wrapper{
-    width: calc((100% - 30px - 30px) / 3);
-    margin-bottom: 83px;
-}
-.pricing__item{
     width: 100%;
     max-width: 370px;
+}
+.pricing__item{
     text-align: center;
     list-style-type: none;
 }
 .pricing__item--pack{
     width: 100%;
     max-width: 370px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
@@ -239,7 +235,7 @@
 .pricing__item--amount{
     width: 100%;
     max-width: 370px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -251,7 +247,7 @@
 .pricing__item--option{
     width: 100%;
     max-width: 370px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px; 
     line-height: 21px;
@@ -263,7 +259,7 @@
 .pricing__item--unit{
     width: 100%;
     max-width: 370px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
