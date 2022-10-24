@@ -192,7 +192,7 @@
 }
 
 .pricing__header {
-  margin-bottom: 59px;
+  margin-bottom: 89px;
 }
 
 .pricing__title {
@@ -218,15 +218,15 @@
 .pricing__cards {
   display: flex;
   column-gap: 30px;
-  height: 530px;
 }
 
 .pricing__card {
   width: calc((100% - 60px) / 3);
   border: 1px solid #f5f5f5;
 }
-.pricing__card_reqular {
-  align-self: flex-end;
+.pricing__card_main {
+  margin-top: -30px;
+
 }
 .pricing__card-item {
   background-color: white;
