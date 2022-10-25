@@ -282,7 +282,7 @@
 }
 
 .customers__title {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -293,7 +293,7 @@
 }
 
 .customers__subtitle {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -312,7 +312,7 @@
 }
 
 .customer__comment {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -334,7 +334,7 @@
 }
 
 .customer__name {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -361,7 +361,7 @@
 }
 
 .customer__title {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
