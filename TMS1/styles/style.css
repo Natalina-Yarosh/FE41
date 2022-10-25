@@ -196,11 +196,14 @@ margin-bottom: 0px;
     margin-top: 59px;
     display:flex;
     justify-content: space-between;
+    column-gap: 30px;
 }
 
 .sub{
     margin-bottom: 83px;
     flex: 1 1;
+    max-width: 370px;
+    width: 100%;
 }
 
 .sub__name{
@@ -214,12 +217,10 @@ margin-bottom: 0px;
     padding: 12px;
     text-align: center;
     color: #FFFFFF;
-    max-width: 370px;
-    width: 100%;
 }
 
-.sub__name--down{
-    margin-top: 20px;
+.sub__name--up{
+    margin-top: -20px;
 }
 
 .sub__price{
@@ -232,8 +233,6 @@ margin-bottom: 0px;
     font-size: 36px;
     line-height: 42px;
     color: #FFFFFF;
-    max-width: 370px;
-    width: 100%;
     padding: 27px;
 }
 
@@ -247,8 +246,6 @@ margin-bottom: 0px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 18px;
     line-height: 20px;
-    max-width: 370px;
-    width: 100%;
     padding: 14px;
 }
 
@@ -261,13 +258,9 @@ margin-bottom: 0px;
     color: #86878B;
     font-size: 18px;
     line-height: 20px;
-    max-width: 370px;
-    width: 100%;
 }
 
 .sub__element{
     border: 1px solid #F5F5F5;
-    max-width: 370px;
-    width: 100%;
     padding: 14px;
 }
