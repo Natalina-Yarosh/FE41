@@ -35,7 +35,9 @@
   display: flex;
   column-gap: 27px;
 }
-
+.benefit__description{
+  font-family: 'Raleway';
+}
 .benefit {
   text-align: center;
   max-width: 371px;
