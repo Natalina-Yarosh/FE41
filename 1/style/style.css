@@ -11,7 +11,6 @@
   margin: 0 auto;
   padding: 0px 15px;
 }
-
 .tabs__link {
   display: inline-block;
   padding: 10px;
@@ -41,24 +40,23 @@
   width: 59%;
   vertical-align: top;
 }
-
 .tab__title {
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
   line-height: 41px;
+  font-weight: 700;
   margin-bottom: 57px;
 }
 .tab__text-item {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
   margin-bottom: 26px;
 }
-
 .tab__text-item:last-of-type {
   margin-bottom: 84px;
 }
-
 .tab__btn {
   display: inline-block;
   padding: 16px;
@@ -92,6 +90,7 @@
   text-align: center;
   line-height: 42px;
   margin-bottom: 40px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .awesome__line {
@@ -105,15 +104,12 @@
   text-align: center;
   color: #86878B;
   line-height: 21px;
+  font-weight: 400;
   margin-bottom: 92px
 }
-.awesome__column {
-  display: inline-block;
-  margin-right: 28px;
-  width: calc( (100% - 28px - 28px - 8px) / 3);
-}
-div.awesome__column:last-child {
-  margin-right: 0;
+.awesome__columns {
+  display: flex;
+  column-gap: 28px;
 }
 .awesome__circle {
   margin: 0 auto;
@@ -135,10 +131,93 @@ div.awesome__column:last-child {
   text-align: center;
   line-height: 33px;
   margin-bottom: 26px;
+  font-weight: 700;
 }
 .awesome__lead {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   text-align: center;
   line-height: 21px;
+  font-weight: 400;
+}
+.options {
+  margin-bottom: 107px;
+  padding: 82px 0 83px;
+  background-color: #f5f5f5;
+}
+.options__header {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  line-height: 42px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.options__line {
+  width: 170px;
+  margin: 0 auto 40px;
+  border-bottom: 1px solid #ec7979;
+}
+.options__subtitle {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #86878b;
+  line-height: 21px;
+  margin-bottom: 59px
+}
+.lists {
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+}
+.list {
+  list-style: none;
+  width: calc((100% - 60px) / 3);
+}
+.list--active {
+  margin-top: -20px;
+}
+.list__item {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  line-height: 20px;
+  color: #86878b;
+  padding: 14px 0;
+  background-color: #ffffff;
+  border: 1px solid #f5f5f5;
+}
+.list__item--tariff {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  line-height: 32px;
+  color: #ffffff;
+  padding: 13px 0;
+  background-color: #333333;
+}
+.list__item--cost {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: 42px;
+  color: #ffffff;
+  padding: 28px 0;
+  background-color: #333333;
+}
+.list__item--free {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 14px 0;
+  background-color: #333333;
 }
