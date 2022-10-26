@@ -28,12 +28,11 @@
 }
 .tab {
   border: 1px solid #c6cbcd;
+  display: flex;
 }
 .tab__info {
-  display: inline-block;
-  width: 58%;
+  width: 60%;
   padding: 55px 29px 54px 100px;
-  vertical-align: top;
 }
 .tab__title {
   font-weight: 700;
@@ -49,27 +48,25 @@
   margin-bottom: 26px;
 }
 .tab__text:last-of-type {
-  margin-bottom: 84px;
+  margin-bottom: 0;
 }
 .tab__btn {
   font-weight: 600;
   color: #ffffff;
   background-color: #ec7979;
   font-size: 18px;
-  line-height: 58px;
-
-  padding: 0px 93px;
+  line-height: 24px;
+  padding: 17px;
   max-width: 270px;
   width: 100%;
   border: none;
+  margin-top: 84px;
 }
 .tab__wrap {
-  display: inline-block;
   width: 40%;
-  vertical-align: top;
 }
 .tabs__foto {
-  display: inline-block;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -118,14 +115,14 @@
   font-size: 24px;
   line-height: 33px;
 }
+.designs__block {
+  display: flex;
+  column-gap: 27px;
+}
 .design {
-  display: inline-block;
-  width: calc((100% - 28px - 27px - 8px) / 3);
-  margin-right: 27px;
+  width: calc((100% - 28px - 27px) / 3);
 }
-.design:last-child {
-  margin-right: 0;
-}
+
 .design__text {
   color: black;
   font-size: 18px;
@@ -134,19 +131,17 @@
 /*   Блок Pricing   */
 .pricing {
   background-color: #f5f5f5;
-  max-height: 900px;
-  font-family: "Raleway", sans-serif;
-  padding-bottom: 107px;
+  padding-bottom: 83px;
+  padding-top: 82px;
   text-align: center;
 }
-.container {
-  margin: auto auto 83px;
-}
+
 .pricing__header {
   font-size: 36px;
   font-weight: 400;
   line-height: 42px;
   text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
   color: #000000;
   max-width: 1170;
   width: 100%;
@@ -160,6 +155,7 @@
 }
 .pricing__text {
   color: #86878b;
+  font-family: "Raleway", sans-serif;
   width: 100%;
   max-width: 1170;
   font-size: 18px;
@@ -169,15 +165,15 @@
 }
 .pricing__prices {
   display: flex;
-  justify-content: center;
-  margin-bottom: 190px;
-  flex-wrap: wrap;
+  column-gap: 30px;
+  justify-content: space-between;
 }
 .pricing__type {
-  width: 370px;
+  max-width: 370px;
+  width: 100%;
 }
 .pricing__type--active {
-  margin: -20px 30px 0;
+  margin-top: -20px;
   filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
 }
 .prices__name {
@@ -187,7 +183,8 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 60px;
+  line-height: 32px;
+  padding: 14px;
 }
 .prices__price {
   background-color: #333333;
