@@ -18,6 +18,7 @@
 
 .tab {
    display: flex;
+   max-height: 500px;
 }
 
 .tab__content {
@@ -55,10 +56,6 @@
    font-size: 18px;
    text-align: center;
    color: #FFFFFF;
-}
-
-.tab__content-image {
-   display: flex;
 }
 
 .about {
