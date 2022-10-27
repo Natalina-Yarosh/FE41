@@ -19,7 +19,7 @@
   font-family: "Raleway", sans-serif;
   font-size: 36px;
   font-weight: 400;
-  margin: 82px 169px 0 169px;
+  margin: 82px 169px 40px 169px;
 
   color: #000000;
   text-transform: uppercase;
@@ -27,7 +27,6 @@
 .pricing__line {
   width: 170px;
   border-bottom: 1px solid #ec7979;
-  margin-top: 40px;
 }
 .pricing__text {
   font-family: "Raleway", sans-serif;
