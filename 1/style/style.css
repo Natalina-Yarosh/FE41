@@ -33,12 +33,11 @@
 }
 .tab {
   border: 1px solid #c6cbcd;
+  display: flex;
 }
 .tab__content {
   padding: 55px 29px 54px 100px;
-  display: inline-block;
-  width: 59%;
-  vertical-align: top;
+  width: 60%;
 }
 .tab__title {
   font-family: "Open Sans", sans-serif;
@@ -73,16 +72,15 @@
   border: none;
 }
 .tab__wrap {
-  display: inline-block;
   width: 40%;
-  vertical-align: top;
 }
 .tab__img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .awesome {
-  padding-bottom: 110px;
+  margin-bottom: 110px;
 }
 .awesome__header {
   font-family: "Raleway", sans-serif;
@@ -102,10 +100,10 @@
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   text-align: center;
-  color: #86878B;
+  color: #86878b;
   line-height: 21px;
   font-weight: 400;
-  margin-bottom: 92px
+  margin-bottom: 92px;
 }
 .awesome__columns {
   display: flex;
@@ -117,9 +115,10 @@
   height: 92px;
   border: 1px solid #ec7979;
   border-radius: 50%;
-  display: table;
-  text-align: center;
-  margin-bottom: 24px
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
 }
 .awesome__wrap {
   display: table-cell;
@@ -166,7 +165,7 @@
   text-align: center;
   color: #86878b;
   line-height: 21px;
-  margin-bottom: 59px
+  margin-bottom: 59px;
 }
 .lists {
   display: flex;
