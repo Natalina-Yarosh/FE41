@@ -229,3 +229,30 @@ margin-bottom: 40px;
 .pricing__maine_block2{
   margin-top:-20px;
 }
+.header{
+  background-color: #000000;
+}
+.header__img{
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.header__flexCont-img{
+  display: flex;
+  margin-left: 152px;
+}
+.header__flexCont-points{
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+.header__button{
+  color:#FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  background-color: #000000;
+  border: none;
+}
+.header__flexCont{
+  display: flex;
+  justify-content: space-between;
+}
