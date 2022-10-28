@@ -8,9 +8,11 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-
+.benefits{
+  margin-bottom: 110px;
+}
 .benefits__title {
-  font-family: "Raleway";
+  font-family: 'Raleway' , sans-serif;
   margin-top: 70px;
   display: block;
   text-align: center;
@@ -22,7 +24,7 @@
   margin: 0 auto 40px;
 }
 .benefits__text {
-  font-family: "Raleway";
+  font-family: 'Raleway' , sans-serif;
   text-align: center;
   color: #86878b;
 }
@@ -36,23 +38,40 @@
   column-gap: 27px;
 }
 .benefit__description{
-  font-family: 'Raleway';
+  font-family: 'Raleway' , sans-serif;
 }
 .benefit {
   text-align: center;
   max-width: 371px;
 }
 .benefit__title {
-  font-family: "Open Sans";
+  font-family: 'Open Sans' , sans-serif;
   margin-bottom: 26px;
   text-align: center;
 }
 .benefit__wrap-img {
   margin-bottom: 25px;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
   border: #EC7979 solid 1px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 92px;
+  height: 92px;
   border-radius: 50%;
+}
+.benefit__img1{
+  width: 65px;
+  height: 65px;
+}
+.benefit__img2{
+  width:66px;
+  height: 46px;
+}
+.benefit__img3{
+  width:44px;
+  height: 66px;
 }
 .tabs {
   margin-bottom: 118px;
@@ -61,7 +80,7 @@
   display: flex;
 }
 .tabs__item {
-  font-family: "Open Sans";
+  font-family: 'Open Sans' , sans-serif;
   text-align: center;
   border: 1px solid transparent;
   background-color: transparent;
@@ -86,13 +105,13 @@
   width: 60%;
 }
 .tab__info-header {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans' , sans-serif;
   margin-bottom: 57px;
   /*font-size: xx-large; - из макета бере, не из головы*/
 }
 .tab__info-text {
   /* width: 570px; */
-  font-family: "Raleway";
+  font-family: 'Raleway' ,sans-serif;
   margin-bottom: 26px;
 }
 .tab__info-text:last-of-type {
@@ -105,7 +124,7 @@
   /* height: 58px; */
   background-color: #ec7979;
   color: white;
-  font-family: "Open Sans";
+  font-family: 'Open Sans' , sans-serif;
   border: none;
   font-weight: 600;
   font-size: 18px;
@@ -123,95 +142,90 @@
   height: 100%;
 }
 .pricing{
-  margin-top: 110px;
   background: #F5F5F5;
 }
 .pricing__header{
   margin-bottom: 59px;
 }
-.pricing__start{
-  height: 1px;
-  color: #F5F5F5;
-}
 .pricing__header_h2{
 text-align: center;
-font-family: 'Raleway';
+font-family: 'Raleway', sans-serif;
 font-size: 36px;
 font-weight: 400;
-margin-top: 82px;
+padding-top: 82px;
 text-transform: uppercase;
+margin-bottom: 40px;
 }
 .pricing__header_line{
   height: 1px;
   border: 1px solid #EC7979;
   width: 170px;
-  margin: 40px auto;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 .pricing__header_txt{
-  font-family: 'Raleway';
+  font-family: 'Raleway' , sans-serif;
   font-size: 18px;
   color: #86878B;
   text-align: center;
 }
 .pricing__maine_list{
   display: flex;
-  height: 540px;
+  column-gap: 30px;
+  justify-content: center;
 }
 .pricing__maine_block{
-  margin-right: 30px;
-  align-self: flex-end;
+  max-width: 370px;
+  width: 100%;
 }
 .list__item-black1{
-  width: 370px;
-  height: 60px;
+  max-width: 370px;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
   color: white;
   background-color: #333333;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans' , sans-serif;
   text-align: center;
-  display: flex;
-  align-items: center;
   font-size: 24px;
   border: 1px solid white;
-  justify-content: center;
 }
 .list__item-black2{
-  width: 370px;
-  height: 100px;
+  max-width: 370px;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: white;
   background-color: #333333;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans' , sans-serif;
   text-align: center;
-  display: flex;
-  align-items: center;
   font-size: 36px;
   border: 1px solid white;
-  justify-content: center;
 }
 .list__item-black3{
-  width: 370px;
-  height: 50px;
+  max-width: 370px;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #86878B;
   background-color: #333333;
-  font-family: 'Raleway';
+  font-family: 'Raleway' , sans-serif;
   text-align: center;
-  display: flex;
-  align-items: center;
   font-size: 18px;
   border: 1px solid white;
-  justify-content: center;
 }
 .list__item-white{
   border: 1px solid #F5F5F5;
-  width: 370px;
-  height: 50px;
+  max-width: 370px;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-size: 18px;
-  font-family: 'Raleway';
+  font-family: 'Raleway' , sans-serif;
   color: #86878B;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: white;
+  text-align: center;
 }
 .pricing__maine_block2{
-  align-self: flex-start;
+  margin-top:-20px;
 }
