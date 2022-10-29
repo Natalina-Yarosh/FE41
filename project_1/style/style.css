@@ -14,7 +14,8 @@
 .designs {
   margin-bottom: 84px;
 }
-.designs__title {
+.designs__title,
+.customers__title {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-size: 36px;
@@ -24,14 +25,16 @@
   margin-bottom: 40px;
 }
 .designs__line,
-.prices__line {
+.prices__line,
+.customers__line {
   width: 170px;
   border: 1px solid #ec7979;
   align-items: center;
   margin: 0 auto 40px;
 }
 .designs__text,
-.prices__text {
+.prices__text,
+.customers__text {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -43,7 +46,9 @@
   display: flex;
   column-gap: 27px;
 }
-
+.customers__text {
+  margin-bottom: 83px;
+}
 .design__wrap-img {
   border: 1px solid #ec7979;
   border-radius: 50%;
@@ -179,7 +184,6 @@
   color: #ffffff;
   background: #333333;
   border: 2px solid #f5f5f5;
-
   padding: 11px;
 }
 .price__cost {
@@ -217,7 +221,73 @@
   list-style: none;
   padding: 14px;
 }
-
 .price_up {
   margin-top: -20px;
+}
+.customers__managers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.block__text {
+  width: 100%;
+  max-width: 370px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: #86878B;
+  background: #E2E2E2;
+  border-radius: 10px;
+  padding: 38px 25px 37px;
+  position: relative;
+  margin-bottom: 66px;
+}
+.block__triangle {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #E2E2E2;
+  position: absolute;
+  top: 100%;
+  left: 87px;
+}
+.block__manager-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 81px;
+}
+.block__manager-foto {
+  width: 70px;
+  height: 70px;
+  margin-right: 30px;
+}
+.manager__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.block__manager-name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+.block__manager-text {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: capitalize;
 }
