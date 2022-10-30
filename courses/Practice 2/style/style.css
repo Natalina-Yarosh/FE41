@@ -3,14 +3,51 @@
   padding: 0;
   box-sizing: border-box;
 }
-.tabs {
-  margin-bottom: 118px;
+.media{
+  background-color: #F8EFEF;
+  padding-top: 32px;
+  padding-bottom: 18px;
+  margin-bottom: 100px;
   margin-top: 100px;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.media__content{
+  display: flex;
+}
+.media__info{
+  width: 39%;
+}
+.media__title{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.68px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+.media__text{
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.13px;
+  color: #86878b;
+}
+.media__contacts{
+  width: 61%;
+}
+.media__pics{
+  display: flex;
+  column-gap: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs {
+  margin-bottom: 118px;
 }
 .tabs_link {
   display: inline-block;
@@ -316,9 +353,10 @@
   background-color: rgb(71, 60, 82);
   padding-top: 70px;
   padding-bottom: 70px;
-  margin-bottom: 67px;
+  /* margin-bottom: 67px; */
 }
 .stylish__title {
+  color: #ffffff;
   position: relative;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -347,8 +385,42 @@
   color: #ffffff;
 }
 .stylish__bnt {
-  max-width: 1510px;
+  position: relative;
+  left: calc(50% - 185px);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  max-width: 370px;
   width: 100%;
   border: 2px solid #ffffff;
-  margin: 0 auto;
+  background-color: transparent;
+  color: #ffffff;
+  line-height: 24px;
+  padding: 17px;
+  cursor: pointer;
+  justify-content: center;
+}
+footer{
+  background-color: #000;
+  padding-top: 39px;
+  padding-bottom: 27px;
+}
+.footer_pics{
+  display: flex;
+  column-gap: 44px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+
+}
+.footer__pic{
+
+}
+.footer_text{
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.13px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
 }
