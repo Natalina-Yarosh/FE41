@@ -1,253 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@700&family=Raleway&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css" />
-  <title>Document</title>
-</head>
-
-<body>
-  <nav class="header">
-    <div class="container">
-      <div class="header_content">
-        <div class="header_wrap-logo">
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="header__logo">
           <img src="assets/images/AX.png" alt="logo" />
           <img src="assets/images/IT.png" alt="logo" />
+        </a>
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">features</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">About</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Pricing</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Pricing</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="tabs">
+      <div class="container">
+        <div class="tabs_menu">
+          <button class="tabs__item tabs__item_active">TAB1</button>
+          <button class="tabs__item tabs__item_inactive">TAB2</button>
+          <button class="tabs__item tabs__item_inactive">TAB3</button>
         </div>
-        <div class="header__menu">
-          <ul>
-            <li><a href="">features</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Contact</a></li>
+        <div class="tab__sections">
+          <div class="tabs__info">
+            <h2 class="tabs__title">Tabs with soft transitioning effect.</h2>
+            <p class="tabs__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              Cum sociis natoque penatibus et magnis dis parturient montes.
+            </p>
+            <p class="tabs__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
+            <button class="tabs__btn">Download</button>
+          </div>
+          <div class="tabs__block">
+            <img
+              src="assets/images/Rectangle 111.png"
+              alt="statue of Liberty"
+              class="tabs__image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="awesome">
+      <div class="container">
+        <div class="awesome__heading">
+          <h2 class="awesome__title">WHY THIS IS AWESOME</h2>
+          <p class="awesome__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="awesome__content">
+          <div class="awesome__item">
+            <div class="awesome__wrap-image">
+              <img
+                src="assets/images/Vector.jpg"
+                alt="vector"
+                class="awesome__image"
+              />
+            </div>
+            <h3 class="awesome__item-title">Thoughtful Design</h3>
+            <p class="awesome__item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+          <div class="awesome__item">
+            <div class="awesome__wrap-image">
+              <img
+                src="assets/images/Computer.png"
+                alt="Computer"
+                class="awesome__image"
+              />
+            </div>
+            <h3 class="awesome__item-title">Thoughtful Design</h3>
+            <p class="awesome__item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+          <div class="awesome__item">
+            <div class="awesome__wrap-image">
+              <img
+                src="assets/images/thunder.png"
+                alt="thunder"
+                class="awesome__image"
+              />
+            </div>
+            <h3 class="awesome__item-title">Thoughtful Design</h3>
+            <p class="awesome__item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pricing">
+      <div class="container">
+        <div class="pricing__header">
+          <h3 class="pricing__title">pricing options</h3>
+          <p class="pricing__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="pricing__cards">
+          <ul class="pricing__card">
+            <li class="pricing__card-item pricing__card_name">Basic</li>
+            <li class="pricing__card-item pricing__card_price">$10</li>
+            <li class="pricing__card-item pricing__card_time">Free for life</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+          </ul>
+          <ul class="pricing__card pricing__card_main">
+            <li class="pricing__card-item pricing__card_name">Optima</li>
+            <li class="pricing__card-item pricing__card_price">$20</li>
+            <li class="pricing__card-item pricing__card_time">Free for life</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+          </ul>
+          <ul class="pricing__card">
+            <li class="pricing__card-item pricing__card_name">Pro</li>
+            <li class="pricing__card-item pricing__card_price">$30</li>
+            <li class="pricing__card-item pricing__card_time">Free for life</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
+            <li class="pricing__card-item">1 gb of space</li>
           </ul>
         </div>
       </div>
     </div>
-  </nav>
-  <div class="tabs">
-    <div class="container">
-      <div class="tabs_menu">
-        <button class="tabs__item tabs__item_active">TAB1</button>
-        <button class="tabs__item tabs__item_inactive">TAB2</button>
-        <button class="tabs__item tabs__item_inactive">TAB3</button>
-      </div>
-      <div class="tab__sections">
-        <div class="tabs__info">
-          <h2 class="tabs__title">Tabs with soft transitioning effect.</h2>
-          <p class="tabs__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-            accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-            Cum sociis natoque penatibus et magnis dis parturient montes.
+    <div class="customers">
+      <div class="container">
+        <div class="customers__header">
+          <h2 class="customers__title">what our customers are saying</h2>
+          <div class="divider"></div>
+          <p class="customers__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <p class="tabs__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            euismod bibendum laoreet.
-          </p>
-          <button class="tabs__btn">Download</button>
         </div>
-        <div class="tabs__block">
-          <img src="assets/images/Rectangle 111.png" alt="statue of Liberty" class="tabs__image" />
+        <div class="customers__content">
+          <div class="customer">
+            <div class="customer__review">
+              <p class="customer__comment">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Doloribus accusamus expedita repellat similique odio aspernatur
+                ex, architecto eaque quo suscipit.
+              </p>
+            </div>
+            <div class="customer__info">
+              <div class="customer__wrap-image">
+                <img
+                  src="assets/images/Davis.png"
+                  alt="face"
+                  class="customer__image"
+                />
+              </div>
+              <div class="customer__wrap-content">
+                <p class="customer__name">Davis Rhiel Madsen</p>
+                <p class="customer__job">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="customer">
+            <div class="customer__review">
+              <p class="customer__comment">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Doloribus accusamus expedita repellat similique odio aspernatur
+                ex, architecto eaque quo suscipit.
+              </p>
+            </div>
+            <div class="customer__info">
+              <div class="customer__wrap-image">
+                <img
+                  src="assets/images/Jaydon.png"
+                  alt="face"
+                  class="customer__image"
+                />
+              </div>
+              <div class="customer__wrap-content">
+                <p class="customer__name">Jaydon Rosser</p>
+                <p class="customer__job">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="customer">
+            <div class="customer__review">
+              <p class="customer__comment">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Doloribus accusamus expedita repellat similique odio aspernatur
+                ex, architecto eaque quo suscipit.
+              </p>
+            </div>
+            <div class="customer__info">
+              <div class="customer__wrap-image">
+                <img
+                  src="assets/images/Cooper.png"
+                  alt="face"
+                  class="customer__image"
+                />
+              </div>
+              <div class="customer__wrap-content">
+                <p class="customer__name">Cooper Dorwart</p>
+                <p class="customer__job">Manager</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="awesome">
-    <div class="container">
-      <div class="awesome__heading">
-        <h2 class="awesome__title">WHY THIS IS AWESOME</h2>
-        <p class="awesome__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <div class="design">
+      <div class="container">
+        <h2 class="desing__title">STYLISH AXURE DESIGN</h2>
+        <p class="design__subtitle">
+          Use the sections you need, remove the ones you don't. Create gorgeous
+          prototypes faster than ever!
         </p>
-      </div>
-      <div class="awesome__content">
-        <div class="awesome__item">
-          <div class="awesome__wrap-image">
-            <img src="assets/images/Vector.jpg" alt="vector" class="awesome__image" />
-          </div>
-          <h3 class="awesome__item-title">Thoughtful Design</h3>
-          <p class="awesome__item-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-            accumsan et viverra.
-          </p>
-        </div>
-        <div class="awesome__item">
-          <div class="awesome__wrap-image">
-            <img src="assets/images/Computer.png" alt="Computer" class="awesome__image" />
-          </div>
-          <h3 class="awesome__item-title">Thoughtful Design</h3>
-          <p class="awesome__item-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-            accumsan et viverra.
-          </p>
-        </div>
-        <div class="awesome__item">
-          <div class="awesome__wrap-image">
-            <img src="assets/images/thunder.png" alt="thunder" class="awesome__image" />
-          </div>
-          <h3 class="awesome__item-title">Thoughtful Design</h3>
-          <p class="awesome__item-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-            accumsan et viverra.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pricing">
-    <div class="container">
-      <div class="pricing__header">
-        <h3 class="pricing__title">pricing options</h3>
-        <p class="pricing__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-      </div>
-      <div class="pricing__cards">
-        <ul class="pricing__card">
-          <li class="pricing__card-item pricing__card_name">Basic</li>
-          <li class="pricing__card-item pricing__card_price">$10</li>
-          <li class="pricing__card-item pricing__card_time">
-            Free for life
-          </li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-        </ul>
-        <ul class="pricing__card pricing__card_main">
-          <li class="pricing__card-item pricing__card_name">Optima</li>
-          <li class="pricing__card-item pricing__card_price">$20</li>
-          <li class="pricing__card-item pricing__card_time">
-            Free for life
-          </li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-        </ul>
-        <ul class="pricing__card">
-          <li class="pricing__card-item pricing__card_name">Pro</li>
-          <li class="pricing__card-item pricing__card_price">$30</li>
-          <li class="pricing__card-item pricing__card_time">
-            Free for life
-          </li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-          <li class="pricing__card-item">1 gb of space</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="customers">
-    <div class="container">
-      <div class="customers__header">
-        <h2 class="customers__title">what our customers are saying</h2>
-        <div class="divider"></div>
-        <p class="customers__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="customers_content">
-        <div class="customer">
-          <div class="customer__review">
-            <p class="customer__comment">Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Doloribus
-              accusamus expedita repellat similique
-              odio aspernatur ex, architecto eaque
-              quo suscipit.</p>
-          </div>
-          <div class="customer__info">
-            <div class="customer__wrap-image">
-              <img src="assets/images/Davis.png" alt="face" class="customer__image">
-            </div>
-            <div class="customer__wrap-content">
-              <p class="customer__name">Davis Rhiel Madsen</p>
-              <p class="customer__job">Manager</p>
-            </div>
-          </div>
-        </div>
-        <div class="customer">
-          <div class="customer__review">
-            <p class="customer__comment">Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Doloribus
-              accusamus expedita repellat similique
-              odio aspernatur ex, architecto eaque
-              quo suscipit.</p>
-          </div>
-          <div class="customer__info">
-            <div class="customer__wrap-image">
-              <img src="assets/images/Jaydon.png" alt="face" class="customer__image">
-            </div>
-            <div class="customer__wrap-content">
-              <p class="customer__name">Jaydon Rosser</p>
-              <p class="customer__job">Manager</p>
-            </div>
-          </div>
-        </div>
-        <div class="customer">
-          <div class="customer__review">
-            <p class="customer__comment">Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Doloribus
-              accusamus expedita repellat similique
-              odio aspernatur ex, architecto eaque
-              quo suscipit.</p>
-          </div>
-          <div class="customer__info">
-            <div class="customer__wrap-image">
-              <img src="assets/images/Cooper.png" alt="face" class="customer__image">
-            </div>
-            <div class="customer__wrap-content">
-              <p class="customer__name">Cooper Dorwart</p>
-              <p class="customer__job">Manager</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="design">
-    <div class="design__content">
-      <h3 class="desing__title">STYLISH AXURE DESIGN</h3>
-      <p class="design__subtitle">Use the sections you need, remove the ones you don't. Create gorgeous prototypes
-        faster
-        than ever!</p>
-      <div class="design_wrap-button">
         <button class="design__button">Download</button>
       </div>
     </div>
-  </div>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__socialMedia">
-        <img src="assets/images/FB.png" alt="Facebook Icon" class="footer__img" />
-        <img src="assets/images/Twitter.png" alt="Twitter Icon" class="footer__img" />
-        <img src="assets/images/In.png" alt="Linkedin Icon" class="footer__img" />
-        <img src="assets/images/PinInterest.png" alt="Pininteres" class="footer__img" />
-        <img src="assets/images/Instagramm.png" alt="Instagramm" class="footer__img" />
-        <img src="assets/images/Github.png" alt="github" class="footer__img">
-        <img src="assets/images/Wifi.png" alt="wifi" class="footer__img" />
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__social">
+          <a href="#" class="footer__link">
+            <img
+              src="assets/images/FB.png"
+              alt="Facebook Icon"
+              class="footer__img"
+            />
+          </a>
+          <a href="#" class="footer__link">
+            <img
+              src="assets/images/Twitter.png"
+              alt="Twitter Icon"
+              class="footer__img"
+            />
+          </a>
+          <a href="#" class="footer__link">
+            <img
+              src="assets/images/In.png"
+              alt="Linkedin Icon"
+              class="footer__img"
+            />
+          </a>
+          <a href="#" class="footer__link">
+            <img
+              src="assets/images/PinInterest.png"
+              alt="Pininteres"
+              class="footer__img"
+            />
+          </a>
+          <a href="#" class="footer__link">
+            <img
+              src="assets/images/Instagramm.png"
+              alt="Instagramm"
+              class="footer__img"
+            />
+          </a>
+          <a href="#" class="footer__link">
+            <img
+              src="assets/images/Github.png"
+              alt="github"
+              class="footer__img"
+            />
+          </a>
+          <a href="#" class="footer__link">
+            <img src="assets/images/Wifi.png" alt="wifi" class="footer__img" />
+          </a>
+        </div>
+        <p class="footer__text">© 2015 Axure Themes</p>
       </div>
-      <p class="footer__tradeMark">© 2015 Axure Themes</p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
