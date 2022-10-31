@@ -326,3 +326,82 @@
   line-height: 21px;
   color: #000000;
 }
+/*   Блок Stylish   */
+
+.stylish {
+  background-color: #000000;
+  margin-bottom: 67px;
+}
+.stylish__container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.stylish__header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  Font-size: 36px;
+  Line-height: 42px;
+  position: relative;
+  margin-bottom: 80px;
+  color: #FFFFFF;
+}
+.stylish__header::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  left: calc(50% - 85px);
+  top: calc(100% + 42px);
+  border: 1px solid #FFFFFF
+}
+.stylish__text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  Font-size: 18px;
+  Line-height: 21px;
+  margin-bottom: 80px;
+  color: #FFFFFF;
+}
+.stylish__btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  Font-size: 18px;
+  text-align: center;
+  max-width: 370px;
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+/*  Блок Подвал   */
+.footer {
+  background-color: #000000;
+}
+.footer__container {
+  padding-top: 35px;
+  padding-bottom: 27px;
+}
+.footer__icons {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 35px;
+  row-gap: 35px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.footer__icons__icon {
+  width: 53px;
+  height: 53px;
+}
+.footer__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.footer__text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  Font-size: 18px;
+  Line-height: 21px;
+  color: #FFFFFF80;
+}
