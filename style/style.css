@@ -422,6 +422,112 @@
   background-color: #ffffff;
   color: rgb(217, 214, 214);
 }
+.contact {
+  text-align: center;
+}
+.contact__title { 
+  position: relative;
+  margin-bottom: 80px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.underline__tittle::before {
+  content: "";
+  width: 170px;
+  border: 1px solid #ec7979;
+  display:inline-block;
+  position: absolute;
+  left: calc(50% - 85px);
+  top: calc(100% + 40px);
+}
+.contact__text {
+  margin-bottom: 89px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: #86878B;
+}
+.contact__details {
+  display: flex;
+  column-gap: 30px;
+}
+.form {
+  max-width: 570px;
+  width: 100%;
+}
+.form__group {
+  position: relative;
+  margin-bottom: 50px;
+}
+.form__input {
+  max-width: 570px;
+  width: 100%;
+  padding: 0 0 10px 0;
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+  background-color:transparent;
+  outline: none;
+  transition: 0.3s;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -1;
+  color: #BDBDBD;
+  transition: 0.3s;
+}
+.form__input:focus {
+  border-bottom: 1px solid red;
+}
+.form__input:focus ~ .form__label, .form__input:not(:placeholder-shown) ~ .form__label {
+  top: -18px;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+.form__textarea {
+  resize: none;
+  max-width: 570px;
+  width: 100%;
+  height: 185px;
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+  background-color:transparent;
+  outline: none;
+  transition: 0.3s;
+}
+.form__textarea:focus {
+  border-bottom: 1px solid red;
+}
+.form__textarea:focus ~ .form__label, .form__textarea:not(:placeholder-shown) ~ .form__label {
+  top: -18px;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+.send__btn {
+  max-width: 370px;
+  width: 100%;
+  padding: 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #EC7979;
+  border: none;
+  margin-bottom: 66px;
+}
 .footer {
   padding-top: 42px;
   padding-bottom: 27px;
