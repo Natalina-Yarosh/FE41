@@ -293,7 +293,18 @@
   line-height: 42px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.customer__title::after {
+  content: "";
+  width: 170px;
+  border-bottom: 1px solid #ec7979;
+  display: inline-block;
+  position: absolute;
+  left: calc(50% - 85px);
+  top: calc(100% + 40px);
 }
 
 .customers__subtitle {
@@ -393,7 +404,10 @@
   padding-bottom: 70px;
   padding-top: 70px;
   margin-bottom: 67px;
-  background: url(images/DesignBG.png);
+  background-image: url(images/DesignBG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .desing__title {
@@ -507,7 +521,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  /* color: white; - перебивает стиль для изменения цвета текста 505 строка */
   text-align: center;
 }
 
@@ -517,4 +530,53 @@
   height: 53px;
   align-items: center;
   justify-content: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F8EFEF;
+  padding-top: 10px;
+}
+
+.social__title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  align-items: left;
+  text-transform: capitalize;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.social__text {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: left;
+  margin-bottom: 18px;
+  color: #CCCCCC;
+}
+
+.social__icons {
+  display: flex;
+  align-items: center;
+  transform: 50%;
+  justify-content: center;
+  column-gap: 32px;
+
+}
+
+.social__icon {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+.social__icon-modified {
+  padding-top: 2px;
 }
