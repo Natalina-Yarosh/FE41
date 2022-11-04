@@ -8,6 +8,7 @@
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
 }
 
 .awesome {
@@ -35,8 +36,9 @@
   border-bottom: 1px solid #ec7979;
   display: inline-block;
   position: absolute;
-  left: calc(50% - 85px);
-  top: calc(100% + 40px);
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 40px);
 }
 
 .awesome__subtitle {
@@ -71,8 +73,7 @@
 
 .awesome__wrap-image {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   width: 91.86px;
   height: 91.61px;
   border-radius: 50%;
@@ -80,16 +81,17 @@
   margin: 0 auto 24px;
 }
 
+.awesome__image {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+}
+
 .awesome__content {
   display: flex;
   column-gap: 27px;
 }
-
-/* .divider {
-  margin: 0 auto 40px;
-  width: 170px;
-  border-bottom: 1px solid #ec7979;
-} */
 
 .tabs {
   margin-bottom: 118px;
@@ -208,8 +210,9 @@
   border-bottom: 1px solid #ec7979;
   display: inline-block;
   position: absolute;
-  left: calc(50% - 85px);
-  top: calc(100% + 40px);
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 40px);
 }
 
 .pricing__subtitle {
@@ -297,14 +300,15 @@
   position: relative;
 }
 
-.customer__title::after {
+.customers__title::before {
   content: "";
   width: 170px;
   border-bottom: 1px solid #ec7979;
   display: inline-block;
   position: absolute;
-  left: calc(50% - 85px);
-  top: calc(100% + 40px);
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 40px);
 }
 
 .customers__subtitle {
@@ -400,7 +404,20 @@
   width: calc(100% - 100px);
 }
 
+/* shade for image */
+.design::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+}
+
 .design {
+  position: relative;
   padding-bottom: 70px;
   padding-top: 70px;
   margin-bottom: 67px;
@@ -533,10 +550,17 @@
 }
 
 .social {
+  background-color: #F8EFEF;
+  padding-top: 32px;
+  padding-bottom: 18px;
+  margin-bottom: 100px;
+}
+
+.social__wrap {
   display: flex;
   justify-content: space-between;
-  background-color: #F8EFEF;
-  padding-top: 10px;
+  column-gap: 49.84px;
+
 }
 
 .social__title {
@@ -565,18 +589,14 @@
 .social__icons {
   display: flex;
   align-items: center;
-  transform: 50%;
   justify-content: center;
-  column-gap: 32px;
-
+  column-gap: 30px;
 }
 
-.social__icon {
+.social__link {
   width: 70px;
   height: 70px;
-  text-align: center;
-}
-
-.social__icon-modified {
-  padding-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
