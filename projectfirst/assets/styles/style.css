@@ -14,8 +14,6 @@
     margin: 0 auto;
 }
 .logo__wrapper{
-    width: 100%;
-    max-width: 1200px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +21,9 @@
 .logo__img{
     width:86.8px;
     height: 31px;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo__img-item{
     width: 100%;
@@ -33,9 +33,16 @@
 .logo__menu{
     width: 100%;
     max-width: 570px;
+}
+.logo__menu-items{
     display: flex;
+    column-gap: 50px;
+    justify-content: center;
 }
 .logo__menu-item{
+    list-style-type: none;
+}
+.logo__menu-link{
     width: 100%;
     max-width: 114px;
     text-decoration: none;
@@ -45,7 +52,7 @@
     font-size: 14px;
     color: #FFFFFF;
 }
-/* Main part */
+/* Template Page main part */
 .template{
     background-image: url(../images/template.jpg);
     background-repeat: no-repeat;
@@ -79,14 +86,15 @@
 .template__logo{
     width: 170px;
     height: 55px;
-    overflow: hidden;
     margin-bottom: 72.88px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
-.template__img-item{
+.template__logo-item{
     width: 100%;
     height: 100%;
-    object-fit: contain;
 }
 .template__title{
     width: 100%;
@@ -169,14 +177,16 @@
 }
 .media__block{
     display: flex;
-    justify-content: space-around;
+    column-gap: 45px;
     width: 100%;
     max-width: 670px;
 }
 .media__img{
     width: 70px;
     height: 70px;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .media__img-item{
     width: 100%;
@@ -328,7 +338,6 @@
 }
 .awesome__items{
     display: inline-block;
-    width: 30%;
     margin-right: 27px;
     width:calc((100% - 27px - 27px - 8px)/3);
 }
@@ -727,17 +736,14 @@
     max-width: 560px;
     margin: 0 auto 28px;
     display: flex;
-    justify-content: space-around;
+    column-gap: 45px;
     }
     .footer__wrapper__img{
     width: 53.2px;
     height: 53.2px;
-    overflow: hidden;
-    }
-    .footer__wrapper__img-icon{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
     .footer__text{
     width: 100%;
