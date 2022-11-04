@@ -600,3 +600,113 @@
   align-items: center;
   justify-content: center;
 }
+
+.contactUs__wrap {
+  /* padding-top: 67px; */
+  margin-bottom: 68px;
+}
+
+.contactUs__title {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.contactUs__title::before {
+  content: "";
+  width: 170px;
+  border-bottom: 1px solid #ec7979;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 40px);
+}
+
+.contactUs__subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin-bottom: 39px;
+}
+
+.contactUs__form {
+  display: flex;
+  margin-bottom: 50px;
+  column-gap: 30px;
+}
+
+.contactUs__customer {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+}
+
+.contactUs__input {
+  padding-bottom: 16px;
+  padding-top: 50px;
+  color: #BDBDBD;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.contactUs__input:focus {
+  border-bottom: 1px solid #312f2f;
+}
+
+.contactUs__input:hover {
+  border-bottom: 1px solid #e67e7e;
+}
+
+.contactUs__bottom {
+  text-align: center;
+}
+
+.contactUs__btn {
+  background: #ec7979;
+  max-width: 370px;
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: white;
+  border: 1px solid white;
+}
+
+.contactUs__message {
+  padding-bottom: 180px;
+  padding-top: 50px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.contactUs__feedback {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+}
+
+.contactUs__message:focus {
+  border-bottom: 1px solid #312f2f;
+}
+
+.contactUs__message:hover {
+  border-bottom: 1px solid #e67e7e;
+}
