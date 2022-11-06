@@ -17,17 +17,10 @@
 .header__wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.emblem {
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-.emblem__end {
-  color: #ec7979;
-}
+
+
 .navigation {
   display: flex;
   align-items: center;
@@ -62,17 +55,13 @@
 }
 .about__wrap {
   display: flex;
+  column-gap: 101px;
 }
 .about__info {
   position: relative;
-  width: 55%;
+  width: 56%;
 }
-.about__name {
-  font-family: "Raleway", sans-serif;
-  font-size: 68px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
+.about__name__logo {
   margin-bottom: 73px;
 }
 .name__end {
@@ -118,7 +107,70 @@
   width: 100%;
 }
 .about__form {
-  width: 45%;
+  position: relative;
+  width: 44%;
+  padding-top: 27px;
+}
+.form__first{
+  max-width: 470px;
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 36px;
+  border-radius: 10px;
+}
+.form__first__title{
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.68px;
+  color: #333333;
+  margin-bottom: 75px;
+  text-align: center;
+}
+.form__first__title--color{
+  color: #ec7979;
+}
+.form__first__group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 75px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.form__field{
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 17px;
+  margin-bottom: 31px;
+  color: #BDBDBD;
+}
+.form__field:last-of-type{
+  margin-bottom: 0px;
+}
+.form__field::placeholder{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+  padding-bottom: 16px ;
+}
+.form__field:focus{
+  outline: none;
+}
+.form__first__btn{
+  background-color: #ec7979;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  padding: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  width: 100%;
 }
 .media {
   background-color: #f8efef;
@@ -151,13 +203,20 @@
   color: #86878b;
 }
 .media__contacts {
-  width: calc(100% - 39% - 50px);
+  width: calc(100% - 39% - 30px);
   /* display: flex;
   align-items: center;
   justify-content: center; */
   /* margin: auto 0; */
 }
+.contacts__icone{
+  display: flex;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
 
+}
 .tabs {
   margin-bottom: 118px;
 }
@@ -254,8 +313,9 @@
   content: "";
   border-bottom: 1px solid #ec7979;
   width: 170px;
-  left: calc(50% - 85px);
-  top: calc(100% + 40px);
+  left: 50%;
+  top: 100%;
+  transform: translate(-50% , 40px);
 }
 
 .designs__text {
@@ -273,13 +333,7 @@
 .disgn__option {
   width: calc((100% - 27px - 27px) / 3);
 }
-/* display: inline-block;
-    margin-right: 27px;
-    max-width: 371px;
-}
-.disgn__option:last-child{
-    margin-right:0;
-} */
+
 
 .design__border {
   display: flex;
@@ -291,7 +345,6 @@
   border-radius: 50%;
   margin-bottom: 24px;
   margin: 0 auto 24px;
-  /* text-align: center; */
 }
 
 .design__title {
@@ -509,8 +562,9 @@
   border-bottom: 1px solid #ffffff;
   max-width: 170px;
   width: 100%;
-  left: calc(50% - 85px);
-  top: calc(100% + 40px);
+  left: 50%;
+  top: 40px;
+  transform: translate(-50%,40px);
 }
 .stylish__text {
   position: relative;
@@ -524,7 +578,8 @@
 }
 .stylish__bnt {
   position: relative;
-  left: calc(50% - 185px);
+  /* left: calc(50% - 185px); */
+  display: block;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -536,7 +591,97 @@
   line-height: 24px;
   padding: 17px;
   cursor: pointer;
+  margin: 0 auto;
   /* justify-content: center; */
+}
+.contact_us{
+  padding-top: 67px;
+  margin-bottom: 66px;
+}
+.contact_us__title{
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 80px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.contact_us__text{
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.13px;
+  text-align: center;
+  margin-bottom: 89px;
+  color: #86878B;
+}
+.form__second{
+  display: flex;
+  column-gap: 30px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form__second__group{
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 30px - 30px)/2);
+}
+.form__string{
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 16px;
+  margin-bottom: 50px;
+  color: #BDBDBD;
+}
+.form__string:last-of-type{
+  margin-bottom: 0px;
+}
+.form__string:focus{
+  outline: none;
+}
+.form__string::placeholder{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+.form__area{
+  width: calc((100% - 30px - 30px)/2);
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+  color: #BDBDBD;
+  resize: none;
+}
+.form__area:focus{
+  outline: none;
+}
+.form__area::placeholder{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+.form__second__btn{
+  display: block;
+  background-color: #ec7979;
+  color: #ffffff;
+  padding: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  max-width: 370px;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+
 }
 .footer {
   background-color: #000;
@@ -545,21 +690,22 @@
 }
 .contacts {
   display: flex;
-  column-gap: 45px;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
+  column-gap: 30px;
+  
 }
-.contacts__last {
+.contacts--footer{
   justify-content: center;
   margin-bottom: 32px;
 }
-/* .footer__wrap__pics{
-  margin-bottom: 32px;
-} */
+.contacts__icone--footer{
+  display: flex;
+  width: 53px;
+  height: 53px;
+  justify-content: center;
+  align-items: center;
 
-.footer__pic {
 }
+
 .footer_text {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
