@@ -18,7 +18,6 @@
 .header__logo {
   max-width: 86px;
   width: 100%;
-  padding: 22px 0;
 }
 
 .header__img {
@@ -46,6 +45,7 @@
   text-transform: capitalize;
   cursor: pointer;
   padding: 22px;
+  display: inline-block;
 }
 
 .header__link:hover {
@@ -68,17 +68,16 @@
 .start__wrap {
   display: flex;
   justify-content: space-between;
+  column-gap: 30px;
+  align-items: center;
 }
 
 .start__about {
   width: 100%;
   max-width: 670px;
-  display: flex;
-  flex-direction: column;
 }
 
 .start__logo {
-  height: 55px;
   width: 170px;
   margin-bottom: 73px;
 }
@@ -110,6 +109,7 @@
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
+  max-width: 270px;
 }
 
 .start__btn--white {
@@ -143,56 +143,47 @@
   border-radius: 10px;
   width: 100%;
   max-width: 470px;
-  height: 450px;
+  /* height: 450px; - не ставим высоту элементам*/
   position: relative;
+  padding-top: 36px;
+  overflow: hidden;
 }
 
-.registrations__text {
+.registrations__free-trial {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
   color: #333333;
-  margin-bottom: 39px;
+  margin-bottom: 59px;
   text-align: center;
-  padding: 36px 0;
 }
 
-.registrations__free-trial {
-  display: inline;
-}
-
-.registrations__text :nth-child(2) {
+.registrations__free-trial--color {
   color: #ec7979;
 }
 
-.registration {
-  display: flex;
-  flex-direction: column;
-  row-gap: 31px;
-  justify-content: center;
-  align-items: center;
-}
-
-input:last-of-type {
-  margin-bottom: 75px;
-}
-
 .registration__field {
-  width: 370px;
-  height: 40px;
+  max-width: 370px;
+  display: block;
+  margin: 0 auto 31px;
+  width: 100%;
+  padding: 16px 0;
   border: none;
   border-bottom: 1px solid #bdbdbd;
   position: relative;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 21px;
-  line-height: 33px;
+  font-size: 14px;
+  line-height: 19px;
   color: #333333;
-  padding: 10px;
   outline: none;
+}
+
+.registration__field:last-of-type{
+  margin-bottom: 0;
 }
 
 .registration__field::placeholder {
@@ -202,9 +193,6 @@ input:last-of-type {
   font-size: 14px;
   line-height: 19px;
   color: #bdbdbd;
-  position: absolute;
-  left: 0%;
-  top: 0%;
 }
 
 .registration__btn:hover {
@@ -215,10 +203,9 @@ input:last-of-type {
 
 .registration__btn {
   width: 100%;
-  height: 60px;
+  padding: 20px;
   background: #ec7979;
   border-radius: 0px 0px 10px 10px;
-  border: none;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
   font-style: normal;
@@ -226,9 +213,8 @@ input:last-of-type {
   font-size: 15px;
   line-height: 20px;
   cursor: pointer;
-  position: absolute;
-  left: 0;
-  top: calc(100% - 60px);
+  margin-top: 75px;
+  border: 2px solid transparent;
 }
 
 .media {
@@ -320,6 +306,8 @@ input:last-of-type {
   position: absolute;
   left: calc(50% - 85px);
   top: calc(100% + 40px);
+
+  /*transform используем для смешения - исправить во всем документе*/
 }
 
 .head__quote {
@@ -636,6 +624,7 @@ input:last-of-type {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 67px;
 }
 
 .title__white {
@@ -677,7 +666,7 @@ input:last-of-type {
 }
 
 .contacts {
-  padding: 67px 0;
+  margin-bottom: 67px;
 }
 
 .contact {
@@ -692,23 +681,22 @@ input:last-of-type {
 .contact__wrap {
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
+  row-gap: 34px;
   width: 50%;
 }
 
 .contact__field {
-  width: 570px;
-  height: 40px;
+  width: 100%;
+  padding: 16px 0;
   border: none;
   border-bottom: 1px solid #bdbdbd;
   position: relative;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 21px;
-  line-height: 33px;
+  font-size: 14px;
+  line-height: 19px;
   color: #333333;
-  padding: 10px;
   outline: none;
 }
 
@@ -719,14 +707,10 @@ input:last-of-type {
   font-size: 14px;
   line-height: 19px;
   color: #bdbdbd;
-  position: absolute;
-  left: 0%;
-  top: 0%;
 }
 
 .contact__message {
   width: calc(50% - 30px);
-  height: 220px;
   resize: none;
 }
 
