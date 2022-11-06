@@ -638,6 +638,7 @@
   line-height: 21px;
   text-align: center;
   margin-bottom: 39px;
+  color: #86878B;
 }
 
 .contactUs__form {
@@ -653,6 +654,11 @@
 }
 
 .contactUs__input {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
   padding-bottom: 16px;
   padding-top: 50px;
   color: #BDBDBD;
@@ -680,7 +686,8 @@
   padding-top: 13px;
   padding-bottom: 13px;
   cursor: pointer;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
+  ;
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
@@ -690,7 +697,12 @@
 }
 
 .contactUs__message {
-  padding-bottom: 180px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  padding-bottom: 188px;
   padding-top: 50px;
   outline: none;
   border: none;
@@ -709,4 +721,179 @@
 
 .contactUs__message:hover {
   border-bottom: 1px solid #e67e7e;
+}
+
+.banner {
+  position: relative;
+  padding-top: 306px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: lightgray;
+  background-image: url(images/bannerImage.png);
+}
+
+/* shade for image */
+.banner::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+}
+
+.banner__wrap {
+  display: flex;
+  padding-bottom: 185px;
+  column-gap: 101px;
+}
+
+.banner__logo {
+  margin-bottom: 72.88px;
+}
+
+.banner__img {
+  height: 55px;
+}
+
+.banner__content {
+  width: 60%;
+}
+
+.banner__title {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  margin-bottom: 95px;
+}
+
+.banner__title::before {
+  content: "";
+  width: 170px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform: translate(0%, 55px);
+}
+
+.banner__subtitle {
+  font-family: 'Raleway', sans-serif;
+  width: 270px;
+  max-width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.banner__download {
+  background: transparent;
+  text-transform: capitalize;
+  margin-top: 42px;
+  max-width: 270px;
+  width: 100%;
+  padding: 16px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+  border: 1px solid white;
+}
+
+.banner__form {
+  border-radius: 3%;
+  width: 470px;
+  height: 450px;
+  max-width: 100%;
+  background-color: white;
+  align-items: center;
+  margin-top: 85px;
+  padding-top: 36px 50px 0px 53px;
+}
+
+.banner__formTitle {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: 367px;
+  max-width: 100%;
+}
+
+.banner__customer {
+  display: flex;
+  flex-flow: column;
+}
+
+.banner__input {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  font-size: 14px;
+  padding-bottom: 16px;
+  padding-top: 50px;
+  color: #BDBDBD;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+
+}
+
+.banner__input:focus {
+  border-bottom: 1px solid #312f2f;
+}
+
+.contactUs__input:hover {
+  border-bottom: 1px solid #e67e7e;
+}
+
+
+.banner__input:nth-of-type(3) {
+  margin-bottom: 75px;
+}
+
+.banner__formWrap {
+  margin-top: 36px;
+  margin-left: 53px;
+  margin-right: 50px;
+}
+
+.banner__btn {
+  background: #ec7979;
+  max-width: 470px;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  border: 1px solid #ec7979;
+  border-radius: 0 0 8px 8px;
+}
+
+span {
+  color: #EC7979;
 }
