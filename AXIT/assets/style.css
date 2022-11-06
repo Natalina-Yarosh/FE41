@@ -336,7 +336,7 @@
   text-align: center;
   padding: 38px 25px 37px;
   background-color: #e2e2e2;
-  border-radius: 4%;
+  border-radius: 10px; /* - не ставим в процентах*/
   margin-bottom: 66px;
 }
 
@@ -499,10 +499,10 @@
 
 .header__menu {
   list-style: none;
+  display: flex;
 }
 
 .header__menu-item {
-  display: inline;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -550,7 +550,7 @@
 }
 
 .social {
-  background-color: #F8EFEF;
+  background-color: #f8efef;
   padding-top: 32px;
   padding-bottom: 18px;
   margin-bottom: 100px;
@@ -560,11 +560,10 @@
   display: flex;
   justify-content: space-between;
   column-gap: 49.84px;
-
 }
 
 .social__title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -582,8 +581,8 @@
   font-size: 18px;
   line-height: 21px;
   align-items: left;
-  margin-bottom: 18px;
-  color: #CCCCCC;
+  /* margin-bottom: 18px; - убираем у последнего элемента */
+  color: #cccccc;
 }
 
 .social__icons {
@@ -601,13 +600,16 @@
   justify-content: center;
 }
 
+.contactUs {
+  margin-bottom: 68px;
+}
 .contactUs__wrap {
   /* padding-top: 67px; */
-  margin-bottom: 68px;
+  /* margin-bottom: 68px; - это же контейнер, какие отступы между разделами? переносим в обертку */
 }
 
 .contactUs__title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -631,20 +633,30 @@
 }
 
 .contactUs__subtitle {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  margin-bottom: 39px;
-  color: #86878B;
+  /* margin-bottom: 39px; - если есть обертка, тогда отступ от нее */
+  color: #86878b;
 }
 
 .contactUs__form {
-  display: flex;
+  /* display: flex;
   margin-bottom: 50px;
+  column-gap: 30px; */
+}
+
+.contactUs_header {
+  margin-bottom: 73px;
+}
+
+.contactUs__form-top {
+  display: flex;
   column-gap: 30px;
+  margin-bottom: 50px;
 }
 
 .contactUs__customer {
@@ -654,17 +666,22 @@
 }
 
 .contactUs__input {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  padding-bottom: 16px;
-  padding-top: 50px;
-  color: #BDBDBD;
+  padding: 16px 0;
+  color: #bdbdbd;
   outline: none;
   border: none;
-  border-bottom: 1px solid #BDBDBD;
+  border-bottom: 1px solid #bdbdbd;
+  width: 100%;
+  margin-bottom: 34px;
+}
+
+.contactUs__input:last-of-type {
+  margin-bottom: 0;
 }
 
 .contactUs__input:focus {
@@ -687,26 +704,30 @@
   padding-bottom: 13px;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
-  ;
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
   text-transform: capitalize;
   color: white;
   border: 1px solid white;
+  display: block;
+  margin: 0 auto;
+}
+.contactUs__item {
+  width: 50%;
 }
 
 .contactUs__message {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  padding-bottom: 188px;
-  padding-top: 50px;
+  padding: 16px 0;
   outline: none;
   border: none;
-  border-bottom: 1px solid #BDBDBD;
+  resize: none;
+  border-bottom: 1px solid #bdbdbd;
 }
 
 .contactUs__feedback {
@@ -726,6 +747,7 @@
 .banner {
   position: relative;
   padding-top: 306px;
+  padding-bottom: 185px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -747,7 +769,7 @@
 
 .banner__wrap {
   display: flex;
-  padding-bottom: 185px;
+  align-items: center;
   column-gap: 101px;
 }
 
@@ -764,7 +786,7 @@
 }
 
 .banner__title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -788,15 +810,13 @@
 }
 
 .banner__subtitle {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   width: 270px;
   max-width: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
   color: white;
 }
 
@@ -818,46 +838,39 @@
 
 .banner__form {
   border-radius: 3%;
-  width: 470px;
-  height: 450px;
-  max-width: 100%;
+  padding-top: 36px;
+  text-align: center;
+  max-width: 470px;
+  width: 100%;
   background-color: white;
   align-items: center;
-  margin-top: 85px;
-  padding-top: 36px 50px 0px 53px;
 }
 
 .banner__formTitle {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
-  width: 367px;
-  max-width: 100%;
-}
-
-.banner__customer {
-  display: flex;
-  flex-flow: column;
+  margin-bottom: 75px;
 }
 
 .banner__input {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
   font-size: 14px;
-  padding-bottom: 16px;
-  padding-top: 50px;
-  color: #BDBDBD;
+  padding: 16px 0;
+  color: #bdbdbd;
   outline: none;
   border: none;
-  border-bottom: 1px solid #BDBDBD;
-
+  border-bottom: 1px solid #bdbdbd;
+  width: calc(100% - 100px);
+  margin-bottom: 31px;
+  /*изменить цвет placeholder*/
 }
 
 .banner__input:focus {
@@ -868,20 +881,12 @@
   border-bottom: 1px solid #e67e7e;
 }
 
-
-.banner__input:nth-of-type(3) {
-  margin-bottom: 75px;
-}
-
-.banner__formWrap {
-  margin-top: 36px;
-  margin-left: 53px;
-  margin-right: 50px;
+.banner__input:last-of-type {
+  margin-bottom: 0;
 }
 
 .banner__btn {
   background: #ec7979;
-  max-width: 470px;
   width: 100%;
   padding: 20px;
   cursor: pointer;
@@ -892,8 +897,9 @@
   color: white;
   border: 1px solid #ec7979;
   border-radius: 0 0 8px 8px;
+  margin-top: 75px;
 }
 
 span {
-  color: #EC7979;
+  color: #ec7979; /*????  -  это что за обращение по тегу?)*/
 }

@@ -48,22 +48,18 @@
           <div class="banner__logo">
             <img src="assets/images/logo.svg" alt="logo" class="banner__img" />
           </div>
-          <h2 class="banner__title">
-            modern axure template for beautiful prototypes</h2>
+          <h1 class="banner__title">
+            modern axure template for beautiful prototypes</h1>
           <p class="banner__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
           <button class="banner__download">download</button>
         </div>
-        <div class="banner__form">
-          <div class="banner__formWrap">
-            <h4 class="banner__formTitle">Try Your <span> FREE </span>Trial Today</h4>
-            <form class="banner__customer">
-              <input type="text" name="customer" placeholder="Name" class="banner__input">
-              <input type="email" name="customer" placeholder="Email" class="banner__input">
-              <input type="password" name="customer" placeholder="Password" class="banner__input">
-            </form>
-          </div>
-          <button class="banner__btn">Get Started</button>
-        </div>
+        <form class="banner__form">
+            <h2 class="banner__formTitle">Try Your <span> FREE </span>Trial Today</h2>
+            <input type="text" name="customer" placeholder="Name" class="banner__input">
+            <input type="email" name="customer" placeholder="Email" class="banner__input">
+            <input type="password" name="customer" placeholder="Password" class="banner__input">
+            <button class="banner__btn">Get Started</button>
+        </form>
       </div>
     </section>
     <section class="social">
@@ -188,7 +184,7 @@
     <section class="pricing">
       <div class="container">
         <div class="pricing__header">
-          <h3 class="pricing__title">pricing options</h3>
+          <h2 class="pricing__title">pricing options</h2>
           <p class="pricing__subtitle">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
@@ -312,19 +308,17 @@
           <h2 class="contactUs__title">Contact us</h2>
           <p class="contactUs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="contactUs__form">
-          <form class="contactUs__customer">
-            <input type="text" name="customer" placeholder="Name" class="contactUs__input" required>
-            <input type="email" name="customer" placeholder="Email" class="contactUs__input" required>
-            <input type="password" name="customer" placeholder="Password" class="contactUs__input" required>
-          </form>
-          <form class="contactUs__feedback">
-            <input type="text" placeholder="Message" class="contactUs__message">
-          </form>
-        </div>
-        <div class="contactUs__bottom">
-          <button class="contactUs__btn">send message</button>
-        </div>
+        <form class="contactUs__form">
+          <div class="contactUs__form-top">
+            <div class="contactUs__item">
+              <input type="text" name="customer" placeholder="Name" class="contactUs__input" required>
+              <input type="email" name="customer" placeholder="Email" class="contactUs__input" required>
+              <input type="password" name="customer" placeholder="Password" class="contactUs__input" required>
+            </div>
+            <textarea class="contactUs__item contactUs__message"  placeholder="Message"></textarea>
+          </div>
+          <button class="contactUs__btn" type="submit">send message</button>
+        </form>
       </div>
     </section>
     <footer class="footer">
