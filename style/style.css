@@ -80,8 +80,9 @@
   border: 1px solid #ec7979;
   display:inline-block;
   position: absolute;
-  left: calc(50% - 85px);
-  top: calc(100% + 40px);
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 40px);
 }
 .white::before {
   border: 1px solid #FFFFFF;
