@@ -56,6 +56,10 @@
   column-gap: 30px;
   align-items: center;
 }
+.mmain__content-item_info {
+  max-width: 670px;
+  width: 100%;
+}
 .main__content-item_form {
   max-width: 470px;
   width: 100%;
@@ -77,8 +81,6 @@
   text-transform: uppercase;
   color: white;
   position: relative;
-  max-width: 670px;
-  width: 100%;
 }
 .main__header::before {
   content: "";
