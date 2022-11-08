@@ -8,6 +8,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 }
 .header {
   background-color: #000;
@@ -55,18 +56,18 @@
 }
 .about__wrap {
   display: flex;
-  column-gap: 101px;
+  column-gap: 61px;
+  justify-content: space-between;
+  align-items: center;
 }
 .about__info {
-  position: relative;
-  width: 56%;
+  max-width: 670px;
+  width: 100%;
 }
 .about__name__logo {
   margin-bottom: 73px;
 }
-.name__end {
-  color: #ec7979;
-}
+
 .about__goal {
   position: relative;
   text-transform: uppercase;
@@ -107,13 +108,13 @@
   width: 100%;
 }
 .about__form {
-  position: relative;
+  /* max-width: ;
   width: 44%;
-  padding-top: 27px;
+   */
+   max-width: 470px;
+  width: 100%;
 }
 .form__first{
-  max-width: 470px;
-  width: 100%;
   background-color: #ffffff;
   padding-top: 36px;
   border-radius: 10px;
@@ -182,10 +183,11 @@
 .media__content {
   display: flex;
   column-gap: 50px;
-  align-items: center;
+  justify-content: space-between;
 }
 .media__info {
-  width: 39%;
+  max-width: 470px;
+  width: 100%;
 }
 .media__title {
   font-family: "Open Sans", sans-serif;
@@ -203,7 +205,9 @@
   color: #86878b;
 }
 .media__contacts {
-  width: calc(100% - 39% - 30px);
+  max-width:670px ;
+  width: 100%;
+  /* width: calc(100% - 39% - 30px); */
   /* display: flex;
   align-items: center;
   justify-content: center; */
@@ -330,7 +334,7 @@
   column-gap: 27px;
 }
 
-.disgn__option {
+.design {
   width: calc((100% - 27px - 27px) / 3);
 }
 
@@ -567,7 +571,6 @@
   transform: translate(-50%,40px);
 }
 .stylish__text {
-  position: relative;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -577,7 +580,6 @@
   color: #ffffff;
 }
 .stylish__bnt {
-  position: relative;
   /* left: calc(50% - 185px); */
   display: block;
   font-family: "Open Sans", sans-serif;
@@ -618,11 +620,10 @@
   margin-bottom: 89px;
   color: #86878B;
 }
-.form__second{
+.form__wrap{
   display: flex;
   column-gap: 30px;
-  row-gap: 50px;
-  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .form__second__group{
