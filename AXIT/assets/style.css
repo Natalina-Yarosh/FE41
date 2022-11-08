@@ -161,10 +161,13 @@
   text-align: center;
   cursor: pointer;
   padding: 7px;
-  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   border: 1px solid transparent;
   background: transparent;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
 }
 
 .tabs__block {
@@ -180,6 +183,7 @@
 .tabs__item_active {
   border-radius: 8px 8px 0 0;
   border-color: #c6cbcd;
+  border-bottom: 1px solid transparent;
 }
 
 .pricing {
@@ -319,6 +323,7 @@
   line-height: 21px;
   align-items: center;
   text-align: center;
+  color: #86878B;
 }
 
 .customers__content {
@@ -336,7 +341,8 @@
   text-align: center;
   padding: 38px 25px 37px;
   background-color: #e2e2e2;
-  border-radius: 10px; /* - не ставим в процентах*/
+  border-radius: 10px;
+  /* - не ставим в процентах*/
   margin-bottom: 66px;
 }
 
@@ -600,15 +606,16 @@
   justify-content: center;
 }
 
-.contactUs {
+.contact {
   margin-bottom: 68px;
 }
-.contactUs__wrap {
+
+.contact__wrap {
   /* padding-top: 67px; */
   /* margin-bottom: 68px; - это же контейнер, какие отступы между разделами? переносим в обертку */
 }
 
-.contactUs__title {
+.contact__title {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -621,7 +628,7 @@
   position: relative;
 }
 
-.contactUs__title::before {
+.contact__title::before {
   content: "";
   width: 170px;
   border-bottom: 1px solid #ec7979;
@@ -632,7 +639,7 @@
   transform: translate(-50%, 40px);
 }
 
-.contactUs__subtitle {
+.contact__subtitle {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -643,29 +650,29 @@
   color: #86878b;
 }
 
-.contactUs__form {
+.contact__form {
   /* display: flex;
   margin-bottom: 50px;
   column-gap: 30px; */
 }
 
-.contactUs_header {
+.contact_header {
   margin-bottom: 73px;
 }
 
-.contactUs__form-top {
+.contact__form-top {
   display: flex;
   column-gap: 30px;
   margin-bottom: 50px;
 }
 
-.contactUs__customer {
+.contact__customer {
   width: 50%;
   display: flex;
   flex-flow: column;
 }
 
-.contactUs__input {
+.contact__input {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -680,23 +687,23 @@
   margin-bottom: 34px;
 }
 
-.contactUs__input:last-of-type {
+.contact__input:last-of-type {
   margin-bottom: 0;
 }
 
-.contactUs__input:focus {
+.contact__input:focus {
   border-bottom: 1px solid #312f2f;
 }
 
-.contactUs__input:hover {
+.contact__input:hover {
   border-bottom: 1px solid #e67e7e;
 }
 
-.contactUs__bottom {
+.contact__bottom {
   text-align: center;
 }
 
-.contactUs__btn {
+.contact__btn {
   background: #ec7979;
   max-width: 370px;
   width: 100%;
@@ -713,11 +720,12 @@
   display: block;
   margin: 0 auto;
 }
-.contactUs__item {
+
+.contact__item {
   width: 50%;
 }
 
-.contactUs__message {
+.contact__message {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -730,17 +738,17 @@
   border-bottom: 1px solid #bdbdbd;
 }
 
-.contactUs__feedback {
+.contact__feedback {
   width: 50%;
   display: flex;
   flex-flow: column;
 }
 
-.contactUs__message:focus {
+.contact__message:focus {
   border-bottom: 1px solid #312f2f;
 }
 
-.contactUs__message:hover {
+.contact__message:hover {
   border-bottom: 1px solid #e67e7e;
 }
 
@@ -846,7 +854,7 @@
   align-items: center;
 }
 
-.banner__formTitle {
+.banner__form-title {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -877,7 +885,7 @@
   border-bottom: 1px solid #312f2f;
 }
 
-.contactUs__input:hover {
+.contact__input:hover {
   border-bottom: 1px solid #e67e7e;
 }
 
@@ -901,5 +909,6 @@
 }
 
 span {
-  color: #ec7979; /*????  -  это что за обращение по тегу?)*/
+  color: #ec7979;
+  /*????  -  это что за обращение по тегу?)*/
 }
