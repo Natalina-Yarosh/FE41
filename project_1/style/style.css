@@ -331,12 +331,10 @@
   width: 87px;
   height: 31px;
 }
-.nav__menu-item {
-  display: inline-block;
+.nav__menu {
+  display: flex;
   align-items: center;
-  justify-content: space-between;
-  /* max-width: 113.8px;
-  width: 100%;  - подумай, как сделать без ограничения ширины. к примеру, поставить между элементами отступы*/
+  column-gap: 59px;
 }
 .nav__menu-item:hover {
   background: #ec7979;
@@ -402,10 +400,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.messangers__icon {
-  /* width: 47px;
-  height: 47px; */
 }
 .stylish__title {
   color: #ffffff;
@@ -642,6 +636,8 @@
   padding: 19px 0;
   position: absolute;
   left: 0;
+  top: 100%;
+  transform: translateY(-100%);
 }
 .form__submit:hover {
   border: 1px solid #ab4949;
