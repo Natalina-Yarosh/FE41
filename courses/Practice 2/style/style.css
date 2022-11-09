@@ -233,6 +233,7 @@
   color: #333333;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   border: 1px solid transparent;
 }
@@ -265,11 +266,13 @@
 .tab__title {
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
+  font-weight: 700;
   color: black;
   margin-bottom: 57px;
 }
 .tab__text {
   font-family: "Raleway", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   margin-bottom: 26px;
 }
@@ -306,6 +309,7 @@
   position: relative;
   font-family: "Raleway", sans-serif;
   font-size: 36px;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 80px;
   text-align: center;
@@ -323,6 +327,7 @@
 .designs__text {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  font-weight: 400;
   margin-bottom: 92px;
   text-align: center;
   color: #86878b;
@@ -352,11 +357,13 @@
 .design__title {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
+  font-weight: 700;
   margin-bottom: 26px;
   text-align: center;
 }
 .design__text {
   font-family: "Raleway", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   text-align: center;
 }
