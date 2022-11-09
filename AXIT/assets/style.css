@@ -732,6 +732,7 @@
   font-size: 14px;
   line-height: 19px;
   padding: 16px 0;
+  color: #BDBDBD;
   outline: none;
   border: none;
   resize: none;
@@ -745,7 +746,8 @@
 }
 
 .contact__message:focus {
-  border-bottom: 1px solid #312f2f;
+  border-bottom: 1px solid color #bdbdbd;
+  ;
 }
 
 .contact__message:hover {
