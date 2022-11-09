@@ -153,6 +153,9 @@
   margin-bottom: 32px;
 }
 .main__form-input:last-child {
+  margin-bottom: 0;
+}
+.main__form-group{
   margin-bottom: 75px;
 }
 .main__form-input:hover {
@@ -644,6 +647,7 @@
 .contact__form-group {
   display: flex;
   column-gap: 30px;
+  margin-bottom: 50px;
 }
 .contact__form-item {
   max-width: 570px;
@@ -664,6 +668,9 @@
   background: #ffffff;
   color: #333333;
   margin-bottom: 50px;
+}
+.contact__form-input:last-child{
+  margin-bottom: 0;
 }
 .contact__form-textarea {
   font-family: "Open Sans", sans-serif;
