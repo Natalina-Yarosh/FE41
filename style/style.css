@@ -35,7 +35,7 @@
 
 .axit {
   position: relative;
-  padding: 306px 0 185px ;
+  padding: 306px 0 185px;
   background-image: url(../images/bg/axit.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -48,7 +48,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background:rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
 }
 .axit__form {
@@ -65,68 +65,69 @@
 }
 .axit__title {
   position: relative;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 48px;
   line-height: 56px;
   align-items: center;
-  text-transform: uppercase; 
-  color: #FFFFFF;
+  text-transform: uppercase;
+  color: #ffffff;
   margin-bottom: 97px;
 }
 .underline__tittle::before {
   content: "";
   width: 170px;
   border: 1px solid #ec7979;
-  display:inline-block;
+  display: inline-block;
   position: absolute;
   left: 50%;
   top: 100%;
   transform: translate(-50%, 40px);
 }
 .white::before {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 .left::before {
   left: 0px;
+  transform: translate(0, 40px);
 }
 .axit__text {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  align-items: center; 
-  color: #FFFFFF;
+  align-items: center;
+  color: #ffffff;
 }
 .axit__btn {
   margin-top: 42px;
   max-width: 270px;
   width: 100%;
   padding: 13px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
   align-items: center;
   text-align: center;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 .axit__item {
   position: relative;
   max-width: 470px;
   width: 100%;
   padding: 36px 0 0;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
 }
 .axit__description {
   margin-bottom: 75px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
@@ -136,10 +137,11 @@
   color: #333333;
 }
 span {
-  color: #EC7979;
+  color: #ec7979;
 }
 .axit__form-wrapper {
-  margin: 0 50px 75px;
+  margin: 0 0 75px;
+  padding: 0 50px;
 }
 .axit__form-group {
   position: relative;
@@ -149,10 +151,9 @@ span {
   width: 100%;
   padding: 0 0 10px 0;
   border: none;
-  border-bottom: 1px solid #BDBDBD;
+  border-bottom: 1px solid #bdbdbd;
   outline: none;
   transition: 0.3s;
-  
 }
 .axit__form-input:focus {
   border-bottom: 1px solid #564356;
@@ -161,50 +162,51 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   align-items: center;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
-.axit__form-input:focus ~ .axit__form-label, .axit__form-input:not(:placeholder-shown) ~ .axit__form-label {
+.axit__form-input:focus ~ .axit__form-label,
+.axit__form-input:not(:placeholder-shown) ~ .axit__form-label {
   top: -18px;
   font-size: 12px;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 .axit__form-btn {
   width: 100%;
   padding: 20px;
   border: none;
-  background-color: #EC7979;
+  background-color: #ec7979;
   outline: none;
   cursor: pointer;
   border-radius: 0px 0px 10px 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 15px;
-  line-height: 20px; 
+  line-height: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .socials {
   padding: 32px 0 18px;
-  background: #F8EFEF;
+  background: #f8efef;
   margin-bottom: 100px;
 }
 .socials__container {
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 .social__description {
   max-width: 470px;
   width: 100%;
 }
 .social__title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
@@ -214,12 +216,12 @@ span {
   margin-bottom: 16px;
 }
 .social__text {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   align-items: center;
-  color: #86878B;
+  color: #86878b;
 }
 .social__icons {
   display: flex;
@@ -279,7 +281,7 @@ span {
   position: absolute;
   left: 0;
   top: calc(100% - 2px);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .tab {
@@ -591,7 +593,7 @@ span {
   height: 100%;
   top: 0;
   left: 0;
-  background:rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
 }
 
@@ -666,17 +668,20 @@ span {
 }
 .form {
   display: flex;
-  column-gap: 30px;  
+  column-gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
 .contact__details {
   max-width: 570px;
-  width: 100%; 
+  width: 100%;
 }
 .form__group {
   position: relative;
   margin-bottom: 50px;
+}
+.form__group:last-child{
+  margin-bottom: 0;
 }
 .form__input {
   max-width: 570px;
@@ -738,6 +743,7 @@ span {
   cursor: pointer;
   background-color: #ec7979;
   border: none;
+  margin-top: 50px;
 }
 .footer {
   padding-top: 42px;
