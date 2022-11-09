@@ -180,6 +180,7 @@
   border: 1px solid transparent;
   background: transparent;
   font-style: normal;
+  border-bottom: none;
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
@@ -198,7 +199,6 @@
 .tabs__item_active {
   border-radius: 8px 8px 0 0;
   border-color: #c6cbcd;
-  border-bottom: 1px solid transparent;
 }
 
 .pricing {
@@ -923,4 +923,15 @@
 
 .banner__span {
   color: #ec7979;
+}
+
+.tabs__info::before {
+  content: "";
+  max-width: 231px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  top: 34px;
 }
