@@ -3,9 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+.main-page-header{
+  background-color: black;
+}
+
+.main-page-header__logo{
+  margin: 22px 0;
+  margin-left: 152px;
+}
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -37,6 +45,18 @@
 
 .tabs__list-link--active {
   border-color: #c6cbcd;
+  position: relative;
+}
+
+.tabs__list-link--active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background: white;
 }
 
 .tabs-list__link {
@@ -64,6 +84,7 @@
   text-align: left;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  line-height: 21px;
   margin-bottom: 26px;
 }
 
@@ -102,21 +123,25 @@
 .title {
   margin-bottom: 90px;
 }
+
 .about__title {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 42px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+  position: relative;
 }
 
-.separator {
-  border: none;
+.about__title::after {
+  content: '';
   width: 170px;
-  height: 1px;
-  margin: 0 auto 40px;
-  background-color: #ec7979;
+  border-bottom: 1px solid #ec7979;
+  display: block;
+  position: absolute;
+  left: calc(50% - 85px);
+  bottom: -40px;
 }
 
 .about__text {
@@ -165,6 +190,7 @@
 .pricing {
   background-color: #f5f5f5;
   padding: 82px 0 83px;
+  margin-bottom: 107px;
 }
 
 .pricing__header {
@@ -176,9 +202,20 @@
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   text-transform: uppercase;
   line-height: 42px;
+  position: relative;
+}
+
+.pricing__title::after {
+  content: '';
+  width: 170px;
+  border-bottom: 1px solid #ec7979;
+  display: block;
+  position: absolute;
+  left: calc(50% - 85px);
+  bottom: -40px;
 }
 
 .pricing__text {
@@ -189,6 +226,7 @@
   font-size: 18px;
   line-height: 21px;
 }
+
 .pricing__content {
   display: flex;
   column-gap: 30px;
@@ -196,6 +234,7 @@
 
 .pricing__content div:nth-child(2) {
   margin-top: -20px;
+  filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
 }
 
 .pricing__content-item {
@@ -252,4 +291,109 @@
   line-height: 22px;
   padding: 14px;
   text-transform: capitalize;
+}
+
+.customers {
+  background-color: #ffffff;
+  margin-bottom: 107px;
+}
+
+.customers__header {
+  margin-bottom: 83px;
+}
+
+.customers__title {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  line-height: 42px;
+  position: relative;
+}
+
+.customers__title::after {
+  content: '';
+  width: 170px;
+  border-bottom: 1px solid #ec7979;
+  display: block;
+  position: absolute;
+  left: calc(50% - 85px);
+  bottom: -40px;
+}
+
+.customers__text {
+  text-align: center;
+  color: #86878b;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.customers__content {
+  display: flex;
+  column-gap: 30px;
+  /*max-height: 180px;*/
+  height: 100%;
+}
+
+
+
+.customers__content-text {
+  padding: 38px 25px 37px;
+  background-color: #E2E2E2;
+  border-radius: 10px;
+  text-align: center;
+  color: #86878b;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 66px;
+  position: relative;
+}
+
+.customers__content-text::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #e2e2e2;
+  position: absolute;
+  top: 100%;
+  left: 70px;
+}
+
+.customers__content-customer {
+  display: flex;
+  column-gap: 30px;
+
+}
+
+.customer__name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 18px;
+  max-width: 270px;
+  width: 100%;
+  max-height: 30px;
+  height: 100%;
+}
+
+.customer__position {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.customer__photo {
+  max-width: 70px;
+  max-height: 70px;
+  border-radius: 50%;
 }
