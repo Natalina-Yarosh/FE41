@@ -148,6 +148,8 @@
 }
 .pricing{
   background: #F5F5F5;
+  padding-bottom: 83px;
+  margin-bottom: 107px;
 }
 .pricing__header{
   margin-bottom: 59px;
@@ -339,7 +341,7 @@ background-size: cover;
 }
 .download__darkWrap{
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 3;
 }
 .download__txt{
   font-family: 'Raleway', 'sans serif';
@@ -355,13 +357,91 @@ background-size: cover;
   left: 50%;
   transform: translateX(-50%);
   width: 370px;
-  height: 58px;
   font-family: 'Open Sans', 'snas serif';
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 70px;
   background-color: rgba(0, 0, 0, 0);
-border: 2px solid white;
-color: white;
-z-index: 2;
+  border: 2px solid white;
+  color: white;
+  padding-top: 16.5px;
+  padding-bottom: 16.5px;
+  z-index: 2;
+}
+.reviews{
+  margin-bottom: 107px;
+}
+.reviews__header_h2{
+  font-family: 'Raleway', 'sans serif';
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+.reviews__header_h2::before{
+  content: '';
+  width: 170px;
+  border: 1px solid #EC7979;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50% , 40px);
+}
+.reviews__header_txt{
+color: #86878B;
+font-family: 'Raleway' , 'sans serif';
+font-size: 18px;
+text-align: center;
+margin-bottom: 83px;
+}
+.reviews__main_flexCont{
+  display: flex;
+  column-gap: 30px;
+}
+.reviews__main_block{
+  max-width: 370px;
+  width: 100%;
+}
+.reviews__main_txt{
+  position: relative;
+  background-color: #E2E2E2;
+  max-width: 370px;
+  width: 100%;
+  padding: 38px 25px 37px 25px;
+  font-family: 'Raleway' , 'sans serif';
+  font-weight: 400;
+  font-size: 18px;
+  color: #86878B;
+  border-radius: 10px;
+  margin-bottom: 66px;
+}
+.reviews__main_txt::before{
+content: '';
+width: 0;
+height: 0;
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-top: 20px solid #E2E2E2;
+position: absolute;
+left: 50px;
+top: 100%;
+}
+.reviews__main_people{
+  display: flex;
+  column-gap: 30px;
+}
+.reviews__name{
+  font-size: 24px;
+  font-family: 'Open-sans' , 'sans serif';
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 18px;
+}
+.reviews__spec{
+  font-size: 18px;
+  font-family: 'Raleway' , 'sans serif';
+  font-weight: 400;
+  text-align: left;
 }
