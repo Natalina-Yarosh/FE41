@@ -14,8 +14,79 @@
     <title>blocks</title>
   </head>
   <body>
+    <!--Чердак-->
+    <header class="header">
+      <div class="container">
+        <div class="header__head">
+          <a class="header__head__logo">
+            <img class="header__logo" src="assets/logo.svg" alt="logo" />
+          </a>
+          <nav class="header__head__navbar">
+            <ul class="header__menu">
+              <li class="header__menu__item">
+                <a class="header__menu__link" href="#">features</a>
+              </li>
+              <li class="header__menu__item">
+                <a class="header__menu__link" href="#">about</a>
+              </li>
+              <li class="header__menu__item">
+                <a class="header__menu__link" href="#">pricing</a>
+              </li>
+              <li class="header__menu__item">
+                <a class="header__menu__link" href="#">reviews</a>
+              </li>
+              <li class="header__menu__item">
+                <a class="header__menu__link" href="#">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Блок Top-->
+    <section class="top">
+      <div class="container top__container">
+        <div class="top__info">
+          <div class="top__info__logo">
+            <a href="#"> <img src="assets/logo_big.svg" alt="logo"> </a>
+          </div>
+          <h1 class="top__info__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+          <p class="top__info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <button class="top__info__button">Download</button>
+        </div>
+          <form class="top__form" action="#">
+            <div class="top__form__group">
+              <h2 class="top__title">Try Your <span class="top__title-free">FREE</span> Trial Today</h2>
+              <div class="top__form__item"> <input class="top__form__input" type="text" placeholder="Name" required></div>
+              <div class="top__form__item"> <input class="top__form__input" type="email" placeholder="E-mail" required></div>
+              <div class="top__form__item"> <input class="top__form__input" type="password" placeholder="Password" required></div>
+            </div>
+            <button type="submit" class="top__form__btn">Get Started</button>
+          </form>
+      </div>   
+    </section>
+    <!--Блок Media-->
+    <section class="media">
+      <div class="container media__container">
+        <div class="media__wrap">
+          <h2 class="media__wrap__title">Social Media</h2>
+          <p class="media__wrap__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Aenean euismod bibendum laoreet.</p>
+        </div>
+        <div class="media__icons">
+          <a class="media__icons__item" href="#"><img class="media__icon" src="assets/facebook_icon.svg" alt="facebook"></a>
+          <a class="media__icons__item" href="#"><img class="media__icon" src="assets/twitter_icon.svg" alt="twitter"></a>
+          <a class="media__icons__item" href="#"><img class="media__icon" src="assets/linkedin_icon.svg" alt="linkedin"></a>
+          <a class="media__icons__item" href="#"><img class="media__icon" src="assets/pinterest_icon.svg" alt="pinterest"></a>
+          <a class="media__icons__item" href="#"><img class="media__icon" src="assets/instagram_icon.svg" alt="instagram"></a>
+          <a class="media__icons__item" href="#"><img class="media__icon" src="assets/github_icon.svg" alt="github""></a>
+          <a class="media__icons__item" href="#"><img class="media__icon" src="assets/rss_icon.svg" alt="rss"></a>
+        </div>
+        </div>
+      </div>
+    </section>
     <!--Блок Tabs-->
-    <div class="tabs">
+    <section class="tabs">
       <div class="container tabs__container">
         <div class="tabs__numbers">
           <a class="tabs-n tabs-n__active">tab 1</a>
@@ -46,9 +117,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--Блок Awesom-->
-    <div class="designs">
+    <section class="designs">
       <div class="container">
         <h2 class="designs__title">why this is awesome</h2>
         <p class="designs__text">
@@ -57,7 +128,7 @@
         <div class="designs__block">
           <div class="design">
             <div class="ellips">
-              <img class="designs__img" src="assets/lamp.png" alt="lamp" />
+              <img class="designs__img" src="assets/lamp.svg" alt="lamp" />
             </div>
             <h3 class="disign__name">Thoughtful Design</h3>
             <p class="design__text">
@@ -70,7 +141,7 @@
             <div class="ellips">
               <img
                 class="designs__img"
-                src="assets/keyboard.png"
+                src="assets/keyboard.svg"
                 alt="keyboard"
               />
             </div>
@@ -85,7 +156,7 @@
             <div class="ellips">
               <img
                 class="designs__img"
-                src="assets/lightning.png"
+                src="assets/lightning.svg"
                 alt="lightning"
               />
             </div>
@@ -98,9 +169,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--Блок Pricing-->
-    <div class="pricing">
+    <section class="pricing">
       <div class="container">
         <h2 class="pricing__header">pricing options</h2>
         <div class="pricing__text">
@@ -148,9 +219,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--Блок Customers-->
-    <div class="customers">
+    <section class="customers">
       <div class="container">
         <h2 class="customers__title">what our customers are saying</h2>
         <p class="customers__heading-text">
@@ -219,28 +290,83 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Блок Stylish   -->
-    <div class="stylish">
-      <div class="container stylish__container">
+    <section class="stylish">
+      <div class="container">
         <h2 class="stylish__header">STYLISH AXURE DESIGN</h2>
-        <p class="stylish__text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+        <p class="stylish__text">
+          Use the sections you need, remove the ones you don't. Create gorgeous
+          prototypes faster than ever!
+        </p>
         <button class="stylish__btn">Download</button>
       </div>
-    </div>
+    </section>
+    <!--   Message    -->
+    <section class="message">
+      <div class="container message__container">
+        <div class="message__header">
+          <h2 class="message__header__title">contact us</h2>
+          <p class="message__header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <form class="message__form">
+            <div class="message__form__user">
+              <div class="message__form__user__item"> <input class="message__form__user__input" type="text" placeholder="Name" required></div>
+              <div class="message__form__user__item"> <input class="message__form__user__input" type="email" placeholder="E-mail" required></div>
+              <div class="message__form__user__item"> <input class="message__form__user__input" type="password" placeholder="Password" required></div>
+            </div>
+            <div class="message__form__text message__form__user__item">
+            <textarea class="message__form__text__input message__form__user__input" type="password" placeholder="Message" required></textarea></div>
+            </div>
+            <button class="message__form__btn " type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <!--   Подвал    -->
-<div class="footer">
-  <div class="container footer__container">
-    <ul class="footer__icons">
-      <li class="footer__icons__icon"><img src="assets/facebook.png" alt="facebook" class="footer__img"></li>
-      <li class="footer__icons__icon"><img src="assets/twitter.png" alt="twitter" class="footer__img"></li>
-      <li class="footer__icons__icon"><img src="assets/linkedin.png" alt="linkedin" class="footer__img"></li>
-      <li class="footer__icons__icon"><img src="assets/instagram_icon.png" alt="instagram" class="footer__img"></li>
-      <li class="footer__icons__icon"><img src="assets/github.png" alt="github" class="footer__img"></li>
-      <li class="footer__icons__icon"><img src="assets/rss_icon.png" alt="rss" class="footer__img"></li>
-    </ul>
-    <p class="footer__text">© 2015 Axure Themes</p>
-  </div>
-</div>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__icons">
+          <a class="footer__icons__icon" href="#">
+            <img
+              src="assets/facebook_icon.svg"
+              alt="facebook"
+              class="footer__img"
+            />
+          </a>
+          <a class="footer__icons__icon" href="#">
+            <img
+              src="assets/twitter_icon.svg"
+              alt="twitter"
+              class="footer__img"
+            />
+          </a>
+          <a class="footer__icons__icon" href="#">
+            <img
+              src="assets/linkedin_icon.svg"
+              alt="linkedin"
+              class="footer__img"
+            />
+          </a>
+          <a class="footer__icons__icon" href="#">
+            <img
+              src="assets/instagram_icon.svg"
+              alt="instagram"
+              class="footer__img"
+            />
+          </a>
+          <a class="footer__icons__icon" href="#">
+            <img
+              src="assets/github_icon.svg"
+              alt="github"
+              class="footer__img"
+            />
+          </a>
+          <a class="footer__icons__icon" href="#">
+            <img src="assets/rss_icon.svg" alt="rss" class="footer__img" />
+          </a>
+        </div>
+        <p class="footer__text">© 2015 Axure Themes</p>
+      </div>
+    </footer>
   </body>
 </html>
