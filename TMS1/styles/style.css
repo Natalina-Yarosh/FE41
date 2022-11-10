@@ -99,7 +99,8 @@
   border-bottom: 1px solid #ffffff;
   display: inline-block;
   position: absolute;
-  top: calc(100% + 55px);
+  top: 100%;
+  transform: translateY(55px);
 }
 
 .start__text {
@@ -182,7 +183,7 @@
   outline: none;
 }
 
-.registration__field:last-of-type{
+.registration__field:last-of-type {
   margin-bottom: 0;
 }
 
@@ -250,6 +251,7 @@
   font-size: 18px;
   line-height: 21px;
   text-transform: capitalize;
+  color: #86878B;
 }
 
 .media__icon {
@@ -304,8 +306,9 @@
   border-bottom: 1px solid #ec7979;
   display: inline-block;
   position: absolute;
-  left: calc(50% - 85px);
-  top: calc(100% + 40px);
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 40px);
 
   /*transform используем для смешения - исправить во всем документе*/
 }
@@ -351,6 +354,9 @@
 .content__description {
   text-align: center;
   font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .tabs {
@@ -388,7 +394,8 @@
   background: #fff;
   position: absolute;
   left: 0;
-  top: calc(100% - 2px);
+  top: 100%;
+  transform: translateY(-2px);
 }
 
 .tab {
