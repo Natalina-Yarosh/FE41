@@ -128,7 +128,8 @@
     margin-bottom: 42px;
 }
 .template__btn{
-    width: 270px;
+    width: 100%;
+    max-width: 270px;
     border: 2px solid #FFFFFF;
     background-color: transparent;
     font-family: 'Open Sans', sans-serif;
@@ -172,11 +173,18 @@
   .template__form-input{
     width:100%;
     max-width: 370px;
-    color: black;
     background: transparent;
     border: none;
     border-bottom: 1px solid #BDBDBD;
     padding-bottom: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: black;
+  }
+  .template__form-input::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #BDBDBD;
   }
   .template__form-input:hover{
     box-shadow: 5px 5px 20px #EC7979;
@@ -259,18 +267,9 @@
     max-width: 1170px;
     display: flex;
 }
-.tabs__links-items{
-    width: 100%;
-    max-width: 203px;
-    display: flex;
-    justify-content: center;
-}
-.tabs__links-item{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
 .tabs__link{
+    width: 100%;
+    max-width: 184px;
     font-family: 'Open Sans',sans-serif;
     font-weight: 400;
     text-align: center;
@@ -282,12 +281,12 @@
     border-bottom: none;
     text-decoration: none;
 }
-.tabs__links-items--active{
+.tabs__link--active{
     border: 1px solid #C6CBCD;
     border-radius: 8px 8px 0 0;
     position: relative;
 }
-.tabs__links-items--active::before{
+.tabs__link--active::before{
     content:'';
     position: absolute;
     width: 100%;
