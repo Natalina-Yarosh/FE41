@@ -6,12 +6,191 @@
 
 
 .main-page-header {
+  max-height: 75px;
   background-color: black;
 }
 
+.container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .main-page-header__logo {
-  margin: 22px 0;
-  margin-left: 152px;
+  max-height: 75px;
+  padding: 22px 0;
+}
+
+.main-page-header__menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 569px;
+  width: 100%;
+}
+
+.menu-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+
+
+.modern {
+  padding-top: 306px;
+  position: relative;
+  background-image: url(../assets/modern-background.png);
+  background-size: cover;
+}
+
+.modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+.modern__container {
+  max-width: 1271px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.modern__mainpage {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.mainpage-info__logo {
+  margin-bottom: 73px
+}
+
+.mainpage-info__title {
+  max-width: 670px;
+  width: 100%;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  margin-right: 101px;
+  margin-bottom: 97px;
+}
+
+.mainpage-info__title::after {
+  content: '';
+  width: 170px;
+  border-bottom: 1px solid #ffffff;
+  display: block;
+  position: absolute;
+  bottom: 369px;
+}
+
+.mainpage-info__text {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 42px;
+  max-width: 270px;
+  width: 100%;
+}
+
+.mainpage-info__button {
+  height: 58px;
+  max-width: 270px;
+  width: 100%;
+  border: 2px solid #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 185px;
+  background: transparent;
+  color: #ffffff;
+}
+
+.mainpage-info__button:hover {
+  color: #EC7979;
+  border: 2px solid #ec7979;
+}
+
+.mainpage-info__button:active {
+  background: #AB4949;
+  border: 2px solid #AB4949;
+  color: #ffffff;
+}
+
+.modern__mainpage-form {
+  background-color: #ffffff;
+  max-width: 470px;
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  padding-top: 36px;
+}
+
+.mainpage-form__title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.mainpage-form__input {
+  display: block;
+  border: 0;
+  border-bottom: 1px solid #BDBDBD;
+  align-items: center;
+  margin-bottom: 31px;
+  height: 38px;
+  max-width: 370px;
+  width: 100%;
+  margin: 0 auto 31px;
+}
+
+.mainpage-form__input::placeholder {
+  padding-bottom: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD
+}
+
+.mainpage-form__getstarted {
+  position: absolute;
+  background-color: #EC7979;
+  color: #ffffff;
+  border-radius: 0px 0px 10px 10px;
+  height: 60px;
+  max-width: 470px;
+  width: 100%;
+  border: 0;
+  bottom: 243px;
+}
+
+.span-title-word--FREE {
+  color: #ec7979;
 }
 
 
@@ -20,6 +199,57 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+
+
+.social-media {
+  background-color: #F8EFEF;
+  padding-top: 32px;
+  padding-bottom: 18px;
+  margin-bottom: 100px;
+}
+
+.social-media__container {
+  display: flex;
+}
+
+.social-media__content {
+  margin-right: 50px;
+  max-width: 470px;
+  width: 100%;
+}
+
+.social-media__content-title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.social-media__content-text {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #86878B;
+}
+
+.social-media__links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.social-media__links li {
+  display: inline-block;
+  column-gap: 45px;
 }
 
 
@@ -414,7 +644,7 @@
   background-image: url(../assets/design-background.jpg);
   position: relative;
   padding: 70px 0;
-
+  margin-bottom: 67px;
 }
 
 .design::before {
@@ -485,51 +715,174 @@
   margin: 0 auto;
 }
 
-.social-media {
-  background-color: #F8EFEF;
-  padding-top: 32px;
-  padding-bottom: 18px;
-  margin-bottom: 100px;
+
+
+.contact {
+  background-color: #FFFFFF;
 }
 
-.social-media__container {
+.contact__form {
   display: flex;
+  column-gap: 30px;
 }
 
-.social-media__content {
-  margin-right: 50px;
-  max-width: 470px;
-  width: 100%;
+.contact__title {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  line-height: 42px;
+  position: relative;
 }
 
-.social-media__content-title {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  color: #333333;
-  margin-bottom: 16px;
+.contact__title::after {
+  content: '';
+  width: 170px;
+  border-bottom: 1px solid #ec7979;
+  display: block;
+  position: absolute;
+  left: calc(50% - 85px);
+  bottom: -40px;
 }
 
-.social-media__content-text{
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
+.contact__text {
+  text-align: center;
+  color: #86878b;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #86878B;
+  margin-bottom: 89px;
 }
 
-.social-media__links {
+.contact__form-input {
+  display: block;
+  border: 0;
+  border-bottom: 1px solid #BDBDBD;
+  height: 38px;
+  max-width: 571px;
+  width: 100%;
+  margin: 0 auto 50px;
+}
+
+.contact__form-input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD
+}
+
+.contact__form-input-user {
+  max-width: 571px;
+  width: 100%;
+}
+
+.contact__form-message {
+  display: block;
+  border: 0;
+  border-bottom: 1px solid #BDBDBD;
+  margin: 0 auto 50px;
+  max-width: 571px;
+  width: 100%;
+  margin: 0 auto 31px;
+  padding-bottom: 192px;
+  max-height: 214px;
+}
+
+.contact__form-message::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD
+}
+
+.contact__form-sendmessage {
+  margin: 0 385px 66px;
+  height: 58px;
+  max-width: 370px;
+  width: 100%;
+  background-color: #EC7979;
+  color: #FFFFFF;
+  border: 0;
+}
+
+
+
+.main-page-footer {
+  padding: 35px 0 27px;
+  max-height: 164px;
+  height: 100%;
+  background-color: #000;
+}
+
+.main-page-footer__container {
+  max-width: 530px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main-page-footer__link {
+  max-width: 53px;
+  max-height: 53px;
+  width: 100%;
+  height: 100%;
+}
+
+.main-page-footer__links {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 28px;
 }
 
-.social-media__links li {
+.main-page-footer__links li {
   display: inline-block;
-  column-gap: 45px;
+  column-gap: 33px;
+}
+
+.main-page-footer__links-facebook {
+  padding: 5.5px 15px;
+}
+
+.main-page-footer__links-twitter {
+  padding: 8.9px 5.2px 8.9px 4.5px;
+}
+
+.main-page-footer__links-linkedin {
+  padding: 6.6px;
+}
+
+.main-page-footer__links-pinterest {
+  padding: 4.4px;
+}
+
+.main-page-footer__links-instagram {
+  padding: 6.6px;
+}
+
+.main-page-footer__links-github {
+  padding: 4.5px;
+}
+
+.main-page-footer__links-rss {
+  padding: 9.8px 8.9px;
+}
+
+.main-page-footer__text {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
