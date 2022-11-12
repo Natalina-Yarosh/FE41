@@ -251,11 +251,6 @@
   width: 100%;
 }
 
-.social-media__links li {
-  display: inline-block;
-  column-gap: 45px;
-}
-
 .social-media__link{
   width: 70px;
   height: 70px;
