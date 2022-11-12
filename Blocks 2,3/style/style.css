@@ -13,6 +13,7 @@
 }
 .header {
 background-color: #000000;
+padding: 22px 0;
 }
 .header__head {
 display: flex;
@@ -65,6 +66,7 @@ text-decoration: none;
 .top__container {
   display: flex;
   text-align: left;
+  align-items: center;
 }
 .top__info {
   max-width: 670px;
@@ -100,6 +102,7 @@ font-size: 18px;
 font-weight: 400;
 line-height: 21px;
 margin-bottom: 42px;
+max-width: 270px;
 }
 .top__info__button {
 border: 2px solid #FFFFFF;
@@ -116,12 +119,12 @@ padding: 16px 0;
 .top__form {
   max-width: 450px;
   background-color: #FFFFFF;
-  margin-top: 27px;
-  margin-bottom: 58px;
   border-radius: 10px;
+  overflow: hidden;
 }
 .top__form__group {
-  margin: 36px 50px 75px;
+  padding: 30px 50px 0;
+  margin-bottom: 75px;
 }
 .top__title {
 font-family: Open Sans, sans-serif;
@@ -137,18 +140,9 @@ margin-bottom: 75px;
 color: #EC7979;
 }
 .top__form__item {
-position: relative;
-margin-bottom: 51px;
+margin-bottom: 30px;
 }
-.top__form__item::before {
-content: "";
-position: absolute;
-border: 1px solid #BDBDBD;
-top: 100%;
-left: 0;
-width: 100%;
-transform: translate(0, 17px);
-}
+
 .top__form__item:last-child {
 margin-bottom: 0px;
 }
@@ -159,6 +153,9 @@ font-size: 14px;
 font-weight: 400;
 line-height: 19px;
 text-align: left;
+padding: 16px 0;
+width: 100%;
+border-bottom: 1px solid #BDBDBD;
 }
 .top__form__input::placeholder {
   color: #BDBDBD;
@@ -179,11 +176,13 @@ border: none;
 /*   Блок Media   */
 .media {
 background-color: #F8EFEF;
+padding-top: 32px;
+padding-bottom: 18px;
+margin-bottom: 100px;
 }
 .media__container {
 display: flex;
-padding-top: 32px;
-padding-bottom: 18px;
+align-items: center;
 column-gap: 30px;
 }
 .media__wrap {
@@ -217,6 +216,9 @@ text-align: left;
   width: 70px;
   height: 70px;
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*   Блок Tabs   */
 .tabs {
@@ -594,6 +596,9 @@ text-align: left;
   color: #FFFFFF;
 }
 /*  Блок Message   */
+.message{
+  margin-bottom: 66px;
+}
 .message__header__title {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -618,13 +623,16 @@ text-align: left;
   font-weight: 400;
   Font-size: 18px;
   Line-height: 21px;
-  margin-bottom: 89px;
   color: #86878b;
 }
-.message__form {
-display: flex;
-column-gap: 30px;
-justify-content: space-between;
+.message__header{
+  margin-bottom: 89px;
+}
+.message__form-wrap{
+  width: 100%;
+  display: flex;
+  column-gap: 30px;
+  margin-bottom: 50px;
 }
 .message__form__user, .message__form__text {
   max-width: calc(50% - 15px);
@@ -633,23 +641,20 @@ justify-content: space-between;
 }
 .message__form__user__item {
 position: relative;
-margin-bottom: 69px;
+margin-bottom: 39px;
 }
-.message__form__user__item::before {
-content: "";
-position: absolute;
-border: 1px solid #BDBDBD;
-top: 100%;
-left: 0;
-width: 100%;
-transform: translate(0, 16px);
+.message__form__user__item:last-child{
+  margin: 0;
 }
 .message__form__user__input {
-border: none;
-font-family: Open Sans, sans-serif;
-font-size: 14px;
-font-weight: 400;
-line-height: 19px;
+  width: 100%;
+  border: none;
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  border-bottom: 1px solid #BDBDBD;
+  padding: 16px 0;
 }
 .message__form__user__input::placeholder {
   color: #BDBDBD;
@@ -657,7 +662,6 @@ line-height: 19px;
  .message__form__text__input {
 resize: none;
 width: 100%;
-height: 100%;
  }
 .message__form__btn {
   background: #EC7979;
@@ -672,13 +676,10 @@ padding-top: 20px;
 padding-bottom: 20px;
 color: #FFFFFF;
 border: none;
-margin-bottom: 66px;
 }
 /*  Блок Подвал   */
 .footer {
   background-color: #000000;
-}
-.footer__container {
   padding-top: 35px;
   padding-bottom: 27px;
 }
@@ -693,6 +694,9 @@ margin-bottom: 66px;
 .footer__icons__icon {
   width: 53px;
   height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer__img {
   width: 100%;
