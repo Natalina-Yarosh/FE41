@@ -11,26 +11,31 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div class="hat">
+    <header class="hat">
         <div class="container">
             <div class="header__wrapper">
-                <div class="axet__text">
-                <h2 class="ax">AX<span class="it">IT</span></h2>
-                </div>
-                <div class="link__hat">
+                <a class="axet__text" href="#">
+                    <svg width="87" height="31" viewBox="0 0 87 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3163 0H15.8289L26.1059 31H20.5146L17.9158 23.2718H8.1507L5.5913 31H0L10.3163 0ZM16.9314 19.0366L13.0726 6.24366L9.05633 19.0366H16.9314Z" fill="white"/>
+                        <path d="M32.086 0L39.016 11.4394L45.9067 0H51.813L42.1267 15.7183L51.498 31H45.5917L39.016 19.9972L32.401 31H26.4553L35.8266 15.7183L26.1403 0H32.086Z" fill="white"/>
+                        <path d="M54.6277 31V0H60.0615V31H54.6277Z" fill="#EC7979"/>
+                        <path d="M86.8026 5.2831H77.8644V31H72.47V5.2831H63.5318V0H86.8026V5.2831Z" fill="#EC7979"/>
+                    </svg>     
+                </а>
+                <nav class="link__hat">
                 <a class="text__link-hat" href="#">Features</a>
                 <a class="text__link-hat" href="#">About</a>
                 <a class="text__link-hat" href="#">Pricing</a>
                 <a class="text__link-hat" href="#">Reviews</a>
                 <a class="text__link-hat" href="#">Contact</a>
-                </div>
+                </nav>
             </div>    
         </div>
-    </div>
+    </header>
 
 
-    <div class="Modern__axure">
-        <div class="container">
+    <section class="Modern__axure">
+        <div class="container container__modern">
             <div class="info__wrapper-item">
             <div class="info__wrapper">               
                 <img class="logo__img" src="asssets/modernaxure/logo.svg" alt="logo">
@@ -39,26 +44,18 @@
                 <button class="info__btn">Download</button>
             </div>
             <form class="modern__form">
-                <h2 class="form__title">Try Your <span class="span__title">FREE</span> Trial Today</h2>
-                <div class="form__item" >
-                    <input class="info__form-input" placeholder="Name" type="text">
-                </div>
-
-                <div class="form__item" >
-                    <input class="info__form-input" placeholder="Email" type="email">
-                </div>
-
-                <div class="form__item" >
-                    <input  class="info__form-input" placeholder="Password" type="password">
-                </div>
-                <button class="modern__btn-form">Get Started</button>
+                <h2 class="form__title">Try Your <span class="span__title">FREE</span> Trial Today</h2>        
+                    <input class="info__form-input form__item" placeholder="Name" type="text">    
+                    <input class="info__form-input form__item" placeholder="Email" type="email">          
+                    <input  class="info__form-input form__item" placeholder="Password" type="password">
+                <button class="modern__btn-form" type="submit">Get Started</button>
             </form>
              </div>
         </div>
-    </div>
+    </section>
 
 
-    <div class="social__media">
+    <section class="social__media">
         <div class="container">
             <div class="social">
                 <div class="social__text">
@@ -67,19 +64,33 @@
                     Aenean euismod bibendum laoreet.</p>
                 </div>
                 <div class="social__icon">
-                     <a class="link__img-social" href="#">
+                    <a class="link__img-social" href="#">
                         <img class="img__social" src="asssets/besement/icon.1.svg" alt="icon">
+                    </a>
+                    <a class="link__img-social" href="#">
                         <img class="img__social" src="asssets/besement/icon.2.svg" alt="icon">
+                    </a>
+                    <a class="link__img-social" href="#">
                         <img class="img__social" src="asssets/besement/icon.3.svg" alt="icon">
+                    </a>
+                    <a class="link__img-social" href="#">
                         <img class="img__social" src="asssets/besement/icon.4.svg" alt="icon">
+                    </a>
+                    <a class="link__img-social" href="#">
                         <img class="img__social" src="asssets/besement/icon.5.svg" alt="icon">
+                    </a>
+                    <a class="link__img-social" href="#">
                         <img class="img__social" src="asssets/besement/icon.6.svg" alt="icon">
+                    </a>
+                    <a class="link__img-social" href="#">
                         <img class="img__social" src="asssets/besement/icon.7.svg" alt="icon">
                     </a>
+                       
+                    
                 </div>
             </div>    
         </div>
-    </div>
+    </section>
 
 
     <div class="tabs">
@@ -113,12 +124,12 @@
    </div>
 
 
-<div class="designs">
+<section class="designs">
         <div class="container">
             <h2 class="designs__title">WHY THIS IS AWESOME</h2>
             <p class="designs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="design__block">
-                <div class="design">
+                <article class="design">
                     <div class="item__icon">
                         <img src="asssets/designs/Vector-2.svg" alt="icon">
                     </div>
@@ -126,8 +137,8 @@
                         Thoughtful Design
                     </h3>
                     <p class="design__text">Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
-                </div>
-                <div class="design">
+                </article>
+                <article class="design">
                     <div class="item__icon">
                         <img src="asssets/designs/Vector-3.svg" alt="icon">
                     </div>
@@ -135,8 +146,8 @@
                         Thoughtful Design
                     </h3>
                     <p class="design__text">Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
-                </div>
-                <div class="design">
+                </article>
+                <article class="design">
                     <div class="item__icon">
                         <img src="asssets/designs/Vector.svg" alt="icon">
                     </div>
@@ -144,13 +155,13 @@
                         Thoughtful Design
                     </h3>
                     <p class="design__text">Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
-                </div>
+                </article>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <div class="pricing">
+    <section class="pricing">
         <div class="container">
             <div class="pricing__title">
                 <h2 class="header__text">pricing options</h2>
@@ -198,11 +209,11 @@
                 </div>
             </div>           
         </div>
-    </div>
+    </section>
 
 
 
-<div class="castomers">
+<section class="castomers">
         <div class="container">
             <div class="castomers__title-header">
                 <h2 class="castomer__title-text">what our customers are saying</h2>
@@ -217,11 +228,19 @@
                         quo suscipit.
                     </p>
                     <div class="block__person">
-                        <img class="person__img" src="asssets/castomers/person.1.jpg" alt="">
-                        <h3 class="person__text-name">Davis Rhiel Madsen</h3>
-                        <p class="job__person">Manager</p>
+                        <div class="person__img-wrap">
+                            <img class="person__img" src="asssets/castomers/person.1.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="person__wrap-text">
+                            <p class="person__text-name">Davis Rhiel Madsen</p>
+                            <p class="job__person">Manager</p>
+                        </div>
                     </div>
                 </div>
+            </div>  
+
+
                 <div class="castomer__block">
                     <p class="block__text">Lorem ipsum dolor sit amet, 
                         consectetur adipisicing elit. Doloribus 
@@ -230,11 +249,18 @@
                         quo suscipit.
                     </p>
                     <div class="block__person">
-                        <img class="person__img" src="asssets/castomers/person.2.jpg" alt="">
-                        <h3 class="person__text-name">Davis Rhiel Madsen</h3>
-                        <p class="job__person">Manager</p>
+                        <div  class="person__img-wrap">
+                            <img class="person__img" src="asssets/castomers/person.1.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="person__wrap-text">
+                            <p class="person__text-name">Davis Rhiel Madsen</p>
+                            <p class="job__person">Manager</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+
                 <div class="castomer__block">
                     <p class="block__text">Lorem ipsum dolor sit amet, 
                         consectetur adipisicing elit. Doloribus 
@@ -243,19 +269,24 @@
                         quo suscipit.
                     </p>
                     <div class="block__person">
-                        <img class="person__img" src="asssets/castomers/person.3.jpg" alt="">
-                        <h3 class="person__text-name">Davis Rhiel Madsen</h3>
-                        <p class="job__person">Manager</p>
+                        <div  class="person__img-wrap">
+                            <img class="person__img" src="asssets/castomers/person.1.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="person__wrap-text">
+                            <p class="person__text-name">Davis Rhiel Madsen</p>
+                            <p class="job__person">Manager</p>
+                        </div>
                     </div>
                 </div>
             </div>            
         </div>     
-    </div>
+    </section>
 
 
 
     <div class="stylish">
-        <div class="container">
+        <div class="container stylish__container">
             <h2 class="title__stylish">STYLISH AXURE DESIGN</h2>
             <p class="subtitle__stylish">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
             <button class="btn__stylish">Download</button>
@@ -271,14 +302,14 @@
                 <p class="contact__subtitle-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <form class="contact__form">
-                <div>
+            <div class="contact__form-wrap">
+                <div class="block__contact-form">
                 <input placeholder="Name" class="contact__imput-form" type="text">
                 <input placeholder="Massage" class="contact__imput-form" type="text">
                 <input placeholder="Password" class="contact__imput-form" type="password">
                 </div>
-                <div>
-                <input placeholder="Email" class="contact__imput-form" type="email">
-                </div>
+                <textarea placeholder="Message" class="contact__imput-form contact__textarea-form"></textarea>
+            </div>
                 <button class="contact__btn">Send Message</button>
             </form>
         </div>
@@ -286,20 +317,34 @@
 
 
 
-    <div class="besement">
+    <footer class="besement">
         <div class="container">
             <div class="besement__icons">
-                <img class="besement__icon" src="asssets/besement/icon.1.svg" alt="icon">
-                <img class="besement__icon" src="asssets/besement/icon.2.svg" alt="icon">
-                <img class="besement__icon" src="asssets/besement/icon.3.svg" alt="icon">
-                <img class="besement__icon" src="asssets/besement/icon.4.svg" alt="icon">
-                <img class="besement__icon" src="asssets/besement/icon.5.svg" alt="icon">
-                <img class="besement__icon" src="asssets/besement/icon.6.svg" alt="icon">
-                <img class="besement__icon" src="asssets/besement/icon.7.svg" alt="icon">
+                <a href="#" class="besement__link">
+                    <img class="besement__icon" src="asssets/besement/icon.1.svg" alt="icon">
+                </a>    
+                <a href="#"  class="besement__link">
+                    <img class="besement__icon" src="asssets/besement/icon.2.svg" alt="icon">
+                </a>    
+                <a href="#"  class="besement__link">
+                    <img class="besement__icon" src="asssets/besement/icon.3.svg" alt="icon">
+                </a>    
+                <a href="#"  class="besement__link">
+                    <img class="besement__icon" src="asssets/besement/icon.4.svg" alt="icon">
+                </a>    
+                <a href="#"  class="besement__link">
+                    <img class="besement__icon" src="asssets/besement/icon.5.svg" alt="icon">
+                </a>    
+                <a href="#"  class="besement__link">
+                    <img class="besement__icon" src="asssets/besement/icon.6.svg" alt="icon">
+                </a>    
+                <a href="#"  class="besement__link">
+                    <img class="besement__icon" src="asssets/besement/icon.7.svg" alt="icon">
+                </a>    
             </div>
                 <p class="besement__text">© 2015 Axure Themes</p>
         </div>
-    </div>
+    </footer>
     
 </body>
 </html>
