@@ -92,7 +92,7 @@
     .pricing__item2{
         margin-top: -20px;
     }
-    .wrapper{
+    .wrapper__awesome{
         padding: 82px 0 83px;
     }
     .container{
@@ -107,14 +107,23 @@
         font-family: 'Raleway';
         font-weight: 400;
         font-size: 36px;
+        position: relative;
     }
-    .awesome__line{
-        border: 1px solid #EC7979;
+    .awesome__header::before{
+        content: '';
         width: 170px;
-        height: 1px;
-        margin: 0 auto;
-        margin-bottom: 40px;
+        border-bottom: 1px solid #EC7979;
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        bottom: 32px;
+        transform: translate(-50% ,256px);
+
     }
+   
+
+    
     .awesome__text{
         font-family: 'Raleway';
         text-align: center;
@@ -143,3 +152,70 @@
     .awesome__item{
         margin-right: 27px
     }
+    .tabs {
+        margin-bottom: 118px;
+      }
+      .tabsheader {
+        display: flex;
+      }
+      .tabsitem {
+        font-family: 'Open Sans' , sans-serif;
+        text-align: center;
+        border: 1px solid transparent;
+        background-color: transparent;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px;
+        max-width: 201px;
+        width: 100%;
+      }
+      .tabsitem-open {
+        border-color: #c6cbcd;
+        border-radius: 5px 5px 0 0;
+      }
+      .tabcontent {
+        display: flex;
+        border: #c6cbcd 2px solid;
+      }
+      .tabinfo {
+        padding: 55px 29px 54px 100px;
+        width: 60%;
+      }
+      .tabinfo-title {
+        font-family: 'Open Sans' , sans-serif;
+        margin-bottom: 57px;
+        font-size: xx-large;
+      }
+      .tabinfo-text {
+        width: 570px;
+        font-family: 'Raleway' ,sans-serif;
+        margin-bottom: 26px;
+      }
+      .tabinfo-text:last-of-type {
+        margin-bottom: 0;
+      }
+      .tabinfo-button {
+        margin-top: 84px;
+        max-width: 270px;
+        width: 100%;
+        height: 58px;
+        background-color: #ec7979;
+        color: white;
+        font-family: 'Open Sans' , sans-serif;
+        border: none;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 16px;
+        font-size: large;
+      }
+      .tabwrap-img {
+        width: 40%;
+      }
+      .tab__picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+      }
