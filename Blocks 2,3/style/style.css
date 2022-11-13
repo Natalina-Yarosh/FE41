@@ -67,6 +67,7 @@ text-decoration: none;
   display: flex;
   text-align: left;
   align-items: center;
+  justify-content: space-between;
 }
 .top__info {
   max-width: 670px;
