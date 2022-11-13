@@ -296,16 +296,17 @@ margin-bottom: 40px;
   display: flex;
   column-gap: 50px;
 }
-footer{
+.footer{
   background-color: #000000;
+  padding-top:41px;
+  padding-bottom: 27px;
 }
 .footer__flexCont{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top:41px;
-  padding-bottom: 33px;
-  column-gap: 45px;
+  margin-bottom: 33px;
+  column-gap: 32px;
 }
 .footer__txt{
   font-family: 'Raleway' , 'sans-serif';
@@ -313,7 +314,6 @@ footer{
   color: #86878B;
   font-size: 18px;
   text-align: center;
-  padding-bottom: 27px;
 }
 .download__header{
 font-family: 'Raleway', 'sans-serif';
@@ -325,7 +325,6 @@ font-size: 36px;
 background-size: cover;
 position: relative;
 margin-bottom: 80px;
-padding-top: 70px;
 z-index: 2;
 }
 .download__header::before{
@@ -346,6 +345,8 @@ margin-bottom: 67px;
 .download__darkWrap{
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 3;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .download__txt{
   font-family: 'Raleway', 'sans-serif';
@@ -357,14 +358,13 @@ margin-bottom: 67px;
   z-index: 2;
 }
 .download__button{
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 370px;
+  display: block;
+  max-width: 370px;
+  margin: 0 auto;
+  width: 100%;
   font-family: 'Open Sans', 'snas-serif';
   font-weight: 600;
   font-size: 18px;
-  margin-bottom: 70px;
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid white;
   color: white;
@@ -393,12 +393,14 @@ margin-bottom: 67px;
   top: 100%;
   transform: translate(-50% , 40px);
 }
+.reviews__header{
+  margin-bottom: 83px;
+}
 .reviews__header_txt{
 color: #86878B;
 font-family: 'Raleway' , 'sans-serif';
 font-size: 18px;
 text-align: center;
-margin-bottom: 83px;
 }
 .reviews__main_flexCont{
   display: flex;
@@ -407,6 +409,9 @@ margin-bottom: 83px;
 .reviews__main_block{
   max-width: 370px;
   width: 100%;
+}
+.reviews__main_people-txt{
+  width: calc(100% - 100px);
 }
 .reviews__main_txt{
   position: relative;
@@ -483,27 +488,26 @@ top: 100%;
 .form2__line{
   border: none;
   border-bottom:1px solid #BDBDBD;
-  margin-bottom: 50px;
-  max-width: 571px;
+  margin-bottom: 30px;
   width: 100%;
-  padding-bottom: 16px;
+  padding: 16px 0 ;
 }
 .form2__line-message{
   border: none;
   border-bottom:1px solid #BDBDBD;
   max-width: 569px;
   width: 100%;
-  padding-bottom: 192px;
+  padding: 16px 0;
 }
+
 .form2__line-last{
 margin-bottom: 0px;
 }
 .form2__flex{
   display: flex;
-  align-items: flex-end;
   column-gap: 30px;
   margin-bottom: 50px;
-  justify-content: center;
+  justify-content: space-between;
 }
 .form2__button{
   display: block;
@@ -518,6 +522,9 @@ margin-bottom: 0px;
   text-align: center;
   color: white;
   border: none;
+}
+.form2__flex-left{
+  width: calc((100% - 30px) / 2);
 }
 .banner{
   background-image: url(./img/banner/image.png);
@@ -619,4 +626,12 @@ color: #EC7979;
   font-weight: 600;
   font-size: 15px;
   border-radius: 0 0 10px 10px;
+}
+
+.footer__link {
+  width: 53px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
