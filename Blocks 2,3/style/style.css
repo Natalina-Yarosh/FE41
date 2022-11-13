@@ -115,7 +115,7 @@ font-weight: 600;
 line-height: 25px;
 max-width: 270px;
 width: 100%;
-padding: 16px 0;
+padding: 16px;
 }
 .top__form {
   max-width: 450px;
@@ -171,8 +171,7 @@ border-bottom: 1px solid #BDBDBD;
   line-height: 20px;
   text-align: center;
 width: 100%;
-padding-top: 20px;
-padding-bottom: 20px;
+padding: 20px;
 color: #FFFFFF;
 border: none;
 }
@@ -309,7 +308,10 @@ transform: translate(0, -6px);
   margin-bottom: 110px;
   font-family: "Raleway", sans-serif;
 }
-.designs__title {
+.designs__header {
+  margin-bottom: 92px;
+}
+.designs__header__title {
   font-weight: 400;
   font-size: 36px;
   text-transform: uppercase;
@@ -317,7 +319,7 @@ transform: translate(0, -6px);
   margin-bottom: 80px;
   position: relative;
 }
-.designs__title::after {
+.designs__header__title::after {
   border: 1px solid #ec7979;
   width: 170px;
   content: "";
@@ -327,11 +329,10 @@ transform: translate(0, -6px);
   transform: translate(-50%, 40px);
   display: inline-block;
 }
-.designs__text {
+.designs__header__text {
   color: #86878b;
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 92px;
 }
 .ellips {
   width: 92px;
@@ -370,6 +371,9 @@ transform: translate(0, -6px);
   margin-bottom: 107px;
 }
 .pricing__header {
+margin-bottom: 79px;
+}
+.pricing__header__title {
   font-size: 36px;
   font-weight: 400;
   line-height: 42px;
@@ -381,7 +385,7 @@ transform: translate(0, -6px);
   margin: 0 auto 80px;
   position: relative;
 }
-.pricing__header::after {
+.pricing__header__title::after {
   border: 1px solid #ec7979;
   width: 100%;
   max-width: 170px;
@@ -394,7 +398,7 @@ transform: translate(0, -6px);
     top: calc(100% + 42px);*/
   display: inline-block;
 }
-.pricing__text {
+.pricing__header__text {
   color: #86878b;
   font-family: "Raleway", sans-serif;
   width: 100%;
@@ -402,7 +406,7 @@ transform: translate(0, -6px);
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  margin: 0 auto 79px;
+  margin: 0 auto;
 }
 .pricing__prices {
   display: flex;
@@ -465,6 +469,9 @@ transform: translate(0, -6px);
 .customers {
   margin-bottom: 107px;
 }
+.customer__header {
+  margin-bottom: 83px;
+}
 .customers__title {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -492,7 +499,6 @@ transform: translate(0, -6px);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 83px;
 }
 .customers__block {
   display: flex;
@@ -580,6 +586,9 @@ transform: translate(0, -6px);
   z-index: -1;
 }
 .stylish__header {
+  margin-bottom: 80px;
+}
+.stylish__header__title {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   Font-size: 36px;
@@ -602,7 +611,6 @@ transform: translate(0, -6px);
   font-weight: 400;
   Font-size: 18px;
   Line-height: 21px;
-  margin-bottom: 80px;
   color: #FFFFFF;
 }
 .stylish__btn {
@@ -695,12 +703,11 @@ width: 100%;
   font-weight: 600;
   line-height: 25px;
   text-align: center;
-max-width: 370px;
+  max-width: 370px;
   width: 100%;
-padding-top: 20px;
-padding-bottom: 20px;
-color: #FFFFFF;
-border: none;
+  padding: 20px;
+  color: #FFFFFF;
+  border: none;
 }
 /*  Блок Подвал   */
 .footer {
