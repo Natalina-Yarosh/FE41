@@ -142,7 +142,9 @@ color: #EC7979;
 .top__form__item {
 margin-bottom: 30px;
 }
-
+.top__form__item:active, :hover, :focus {
+outline: none;
+}
 .top__form__item:last-child {
 margin-bottom: 0px;
 }
@@ -245,6 +247,17 @@ text-align: left;
 .tabs-n__active {
   border-color: #c6cbcd;
   border-radius: 5px 5px 0 0;
+  position: relative;
+}
+.tabs-n__active::after {
+content: '';
+position: absolute;
+top: 100%;
+left: 0;
+border: 6px solid #fff;
+max-width: 170px;
+width: 100%;
+transform: translate(0, -6px);
 }
 .tab {
   border: 1px solid #c6cbcd;
@@ -308,14 +321,15 @@ text-align: left;
   width: 170px;
   content: "";
   position: absolute;
-  left: calc(50% - 85px);
-  top: calc(100% + 42px);
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 40px);
   display: inline-block;
 }
 .designs__text {
   color: #86878b;
   font-size: 18px;
-  line-height: 21.13px;
+  line-height: 21px;
   margin-bottom: 92px;
 }
 .ellips {
@@ -372,8 +386,11 @@ text-align: left;
   max-width: 170px;
   content: "";
   position: absolute;
-  left: calc(50% - 85px);
-  top: calc(100% + 42px);
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 42px);
+  /*left: calc(50% - 85px);
+    top: calc(100% + 42px);*/
   display: inline-block;
 }
 .pricing__text {
@@ -463,8 +480,11 @@ text-align: left;
   width: 170px;
   display: inline-block;
   position: absolute;
-  left: calc(50% - 85px);
-  top: calc(100% + 42px);
+  /*left: calc(50% - 85px);
+    top: calc(100% + 42px);*/
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 42px);
 }
 .customers__heading-text {
   color: #86878b;
@@ -571,9 +591,10 @@ text-align: left;
   content: "";
   position: absolute;
   width: 170px;
-  left: calc(50% - 85px);
-  top: calc(100% + 42px);
-  border: 1px solid #FFFFFF
+  border: 1px solid #FFFFFF;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 40px);
 }
 .stylish__text {
   font-family: 'Raleway', sans-serif;
@@ -659,7 +680,10 @@ margin-bottom: 39px;
 .message__form__user__input::placeholder {
   color: #BDBDBD;
  } 
- .message__form__text__input {
+.message__form__user__input:active, :hover, :focus {
+outline: none;
+}
+.message__form__text__input {
 resize: none;
 width: 100%;
  }
