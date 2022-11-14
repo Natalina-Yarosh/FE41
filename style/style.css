@@ -92,6 +92,8 @@
   transform: translate(0, 40px);
 }
 .axit__text {
+  max-width: 270px;
+  width: 100%;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -99,9 +101,9 @@
   line-height: 21px;
   align-items: center;
   color: #ffffff;
+  margin-bottom: 42px;
 }
 .axit__btn {
-  margin-top: 42px;
   max-width: 270px;
   width: 100%;
   padding: 13px;
@@ -154,6 +156,10 @@ span {
   border-bottom: 1px solid #bdbdbd;
   outline: none;
   transition: 0.3s;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
 }
 .axit__form-input:focus {
   border-bottom: 1px solid #564356;
@@ -617,9 +623,9 @@ span {
   align-items: center;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 80px;
 }
 .design__btn {
-  margin-top: 80px;
   max-width: 370px;
   width: 100%;
   padding: 13px;
@@ -669,6 +675,7 @@ span {
 .form {
   display: flex;
   column-gap: 30px;
+  row-gap: 50px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -692,6 +699,10 @@ span {
   background-color: transparent;
   outline: none;
   transition: 0.3s;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
 }
 .form__label {
   position: absolute;
@@ -700,6 +711,10 @@ span {
   z-index: -1;
   color: #bdbdbd;
   transition: 0.3s;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
 }
 .form__input:focus {
   border-bottom: 1px solid red;
@@ -720,6 +735,10 @@ span {
   background-color: transparent;
   outline: none;
   transition: 0.3s;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
 }
 .form__textarea:focus {
   border-bottom: 1px solid red;
@@ -743,7 +762,6 @@ span {
   cursor: pointer;
   background-color: #ec7979;
   border: none;
-  margin-top: 50px;
 }
 .footer {
   padding-top: 42px;
