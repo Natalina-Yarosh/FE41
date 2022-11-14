@@ -98,7 +98,10 @@
 }
 .tabs__item-open {
   border-color: #c6cbcd;
-  border-radius: 5px;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
 }
 
 .tab__content {
@@ -108,6 +111,15 @@
 .tab__info {
   padding: 55px 29px 54px 100px;
   width: 60%;
+}
+.tabs__item-open::before{
+  content: '';
+  position: absolute;
+  width: 197px;
+  border: 1px solid white;
+  top: 100%;
+  left: 0px;
+  
 }
 .tab__info-header {
   font-family: 'Open Sans' , sans-serif;
@@ -253,6 +265,7 @@ margin-bottom: 40px;
   background-color: #000000;
   border: none;
   text-decoration: none;
+  line-height: 19px;
 }
 .header__flexCont{
   display: flex;
@@ -270,6 +283,7 @@ margin-bottom: 40px;
   font-family: 'Open Sans' , 'sans-serif';
   font-weight: 700;
   font-size: 24px;
+  line-height: 24px;
   padding-bottom: 16px;
 }
 .social__leftPart-txt{
@@ -278,6 +292,8 @@ margin-bottom: 40px;
   color:#86878B;
   max-width: 470px;
   width: 100%;
+  line-height: 21px;
+  font-size: 18px;
 }
 .social__rightPart{
   display: flex;
@@ -313,6 +329,7 @@ margin-bottom: 40px;
   font-weight: 400;
   color: #86878B;
   font-size: 18px;
+  line-height: 21px;
   text-align: center;
 }
 .download__header{
@@ -322,6 +339,7 @@ text-align: center;
 text-transform: uppercase;
 color: white;
 font-size: 36px;
+line-height: 36px;
 background-size: cover;
 position: relative;
 margin-bottom: 80px;
@@ -353,6 +371,7 @@ margin-bottom: 67px;
   color: white;
   font-weight: 400;
   font-size: 18px;
+  line-height: 21px;
   text-align: center;
   margin-bottom: 80px;
   z-index: 2;
@@ -365,6 +384,7 @@ margin-bottom: 67px;
   font-family: 'Open Sans', 'snas-serif';
   font-weight: 600;
   font-size: 18px;
+  line-height: 21px;
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid white;
   color: white;
@@ -379,6 +399,7 @@ margin-bottom: 67px;
   font-family: 'Raleway', 'sans-serif';
   font-weight: 400;
   font-size: 36px;
+  line-height: 36px;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -401,6 +422,7 @@ color: #86878B;
 font-family: 'Raleway' , 'sans-serif';
 font-size: 18px;
 text-align: center;
+line-height: 21px;
 }
 .reviews__main_flexCont{
   display: flex;
@@ -422,6 +444,7 @@ text-align: center;
   font-family: 'Raleway' , 'sans-serif';
   font-weight: 400;
   font-size: 18px;
+  line-height: 21px;
   color: #86878B;
   border-radius: 10px;
   margin-bottom: 66px;
@@ -443,6 +466,7 @@ top: 100%;
 }
 .reviews__name{
   font-size: 24px;
+  line-height: 30px;
   font-family: 'Open-sans' , 'sans-serif';
   font-weight: 700;
   text-align: left;
@@ -453,6 +477,7 @@ top: 100%;
   font-family: 'Raleway' , 'sans-serif';
   font-weight: 400;
   text-align: left;
+  line-height: 21px;
 }
 .form2{
   margin-bottom: 66px;
@@ -461,6 +486,7 @@ top: 100%;
   font-family: 'Raleway' , 'sans-serif';
   font-weight: 400;
   font-size: 36px;
+  line-height: 42px;
   text-align: center;
   text-transform: uppercase;
   position: relative;
@@ -499,7 +525,6 @@ top: 100%;
   width: 100%;
   padding: 16px 0;
 }
-
 .form2__line-last{
 margin-bottom: 0px;
 }
@@ -514,6 +539,7 @@ margin-bottom: 0px;
   font-family: 'Open sans' , 'sans-serif';
   font-weight: 600;
   font-size: 18px;
+  line-height: 21px;
   margin: 0 auto;
   background-color: #EC7979;
   max-width: 370px;
@@ -546,6 +572,7 @@ margin-bottom: 0px;
   font-weight: 500;
   font-size: 48px;
   text-align: left;
+  line-height: 56px;
   max-width: 670px;
   width: 100%;
   color: white;
@@ -564,6 +591,7 @@ transform: translateY(55px);
   font-family: 'Raleway';
   font-weight: 400;
   font-size: 18px;
+  line-height: 21px;
   width: 100%;
   max-width: 270px;
   color: white;
@@ -576,7 +604,8 @@ text-align: center;
 color: white;
 max-width: 270px;
 width: 100%;
-height: 58px;
+line-height: 25px;
+padding: 14.5px;
 font-family: 'Open Sans' , 'snas-serif';
 font-weight: 600;
 font-size: 18px;
@@ -593,6 +622,7 @@ font-size: 18px;
   font-family: 'Open Sans' , 'sans-serif';
   font-weight: 700;
   font-size: 24px;
+  line-height: 24px;
   text-align: center;
   margin-bottom: 75px;
   text-transform: uppercase;
@@ -617,7 +647,8 @@ color: #EC7979;
 }
 .banner__btn-red{
   width: 100%;
-  height: 60px;
+  line-height: 20px;
+  padding: 20px;
   background-color: #EC7979;
   color: white;
   text-align: center;
@@ -625,6 +656,7 @@ color: #EC7979;
   font-family: 'Open Sans' , 'sans-serif';
   font-weight: 600;
   font-size: 15px;
+  line-height: 20px;
   border-radius: 0 0 10px 10px;
 }
 
@@ -634,4 +666,9 @@ color: #EC7979;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.reviews__imgWrap{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
 }
