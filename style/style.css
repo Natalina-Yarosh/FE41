@@ -309,3 +309,76 @@
         color: #000000;
         max-height: 20px;
       }
+      .form2{
+        margin-bottom: 66px;
+      }
+      .form2h2{
+        font-family: 'Raleway' , 'sans-serif';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 80px;
+      }
+      .form2h2::before{
+        content: '';
+        width: 170px;
+        border: 1px solid #EC7979;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50% ,40px);
+      }
+      .form2txt{
+        font-family: 'Raleway' , 'sans-serif';
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        color: #86878b;
+      }
+      .form2header{
+        margin-bottom: 90px;
+      }
+      .form2line{
+        border: none;
+        border-bottom:1px solid #BDBDBD;
+        margin-bottom: 30px;
+        width: 100%;
+        padding: 16px 0 ;
+      }
+      .form2line-message{
+        border: none;
+        border-bottom:1px solid #BDBDBD;
+        max-width: 569px;
+        width: 100%;
+        padding: 16px 0;
+      }
+      .form2line-last{
+      margin-bottom: 0px;
+      }
+      .form2flex{
+        display: flex;
+        column-gap: 30px;
+        margin-bottom: 50px;
+        justify-content: space-between;
+      }
+      .form2__button{
+        display: block;
+        font-family: 'Open sans' , 'sans-serif';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0 auto;
+        background-color: #EC7979;
+        max-width: 370px;
+        width: 100%;
+        height: 58px;
+        text-align: center;
+        color: white;
+        border: none;
+      }
+      .form2flex-left{
+        width: calc((100% - 30px) / 2);
+      }
