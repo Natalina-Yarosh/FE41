@@ -109,7 +109,7 @@
 }
 
 .mainpage-info__button {
-  height: 58px;
+  padding: 14px;
   max-width: 270px;
   width: 100%;
   border: 2px solid #ffffff;
@@ -182,8 +182,8 @@
   background-color: #EC7979;
   color: #ffffff;
   border-radius: 0px 0px 10px 10px;
-  height: 60px;
   max-width: 470px;
+  padding: 22px;
   width: 100%;
   border: 0;
   bottom: 243px;
@@ -378,7 +378,8 @@
   border-bottom: 1px solid #ec7979;
   display: block;
   position: absolute;
-  left: calc(50% - 85px);
+  left: 50%;
+  transform: translateX(-85px);
   bottom: -40px;
 }
 
@@ -724,6 +725,7 @@
 .contact__form {
   display: flex;
   column-gap: 30px;
+  flex-wrap: wrap;
 }
 
 .contact__title {
@@ -782,13 +784,11 @@
 }
 
 .contact__form-message {
-  display: block;
   border: 0;
   border-bottom: 1px solid #BDBDBD;
-  margin: 0 auto 50px;
-  max-width: 571px;
+  margin-bottom: 50px;
+  max-width: 569px;
   width: 100%;
-  margin: 0 auto 31px;
   padding-bottom: 192px;
   max-height: 214px;
 }
@@ -804,12 +804,13 @@
 
 .contact__form-sendmessage {
   margin: 0 385px 66px;
-  height: 58px;
   max-width: 370px;
+  padding: 21px;
   width: 100%;
   background-color: #EC7979;
   color: #FFFFFF;
   border: 0;
+  display: inline-block
 }
 
 
