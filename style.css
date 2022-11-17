@@ -79,6 +79,7 @@
   line-height: 56px;
   text-transform: uppercase;
   margin-bottom: 97.12px;
+  position: relative;
 }
 
 .trial__title::before {
@@ -87,7 +88,8 @@
   border-bottom: 1px solid #ffffff;
   display: inline-block;
   position: absolute;
-  transform: translateY(223px);
+  top: 100%;
+  transform: translateY(40px);
 }
 
 .trial__description {
@@ -125,7 +127,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 31px;
-  padding: 36px 50px 75px;
+  padding: 36px 50px 0;
+  margin-bottom: 75px;
 }
 
 .trial__form_title {
